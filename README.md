@@ -1,17 +1,17 @@
-# As note 0.2.0
+# As note 0.3.0
 
 Think of bookmarks as notes.
-Advanced bookmark manager with tags, sticky notes, and trash mode.
+Advanced bookmark manager with labels, sticky notes, and trash mode.
 AsNote has the key features of onetab for tab managements, but use bookmarks as database.
 
 ## Features
 
 - Cooperate with native bookmark system.
-- Tags.
+- Labels/Tags.
 - The key features of onetab.
-- Sticky notes in web page. (pro)
-- Trash and Recycle mode. (pro)
-- Picking mode. (pro)
+- Sticky notes in web page.
+- Trash and Recycle mode.
+- Picking mode.
 - Advanced bookmark management.
 - Export a selected bookmark folder.
 - Auto sync.
@@ -30,7 +30,7 @@ A node is a bookmark or a bookmark folder in Chromium.
 
 ### home folder node
 
-The Home folder is the working bookmark folder of AsNote. By this you can let AsNote load only one folder.
+The Home folder is the starting folder of AsNote.
 
 ### inbox folder node
 
@@ -46,27 +46,40 @@ In app page, you can reopen these tabs/bookmarks by click the titles. But if you
 
 AsNote is built with performance in mind. You can save thousands of tabs easily. Your data's safety is guaranteed by your native bookmark system.
 
-### tags (pro)
+### labels
 
-Tags should start width '#' and contain no other symbols, but may have '-' or '\_'.
+Labels should start width '#' and contain no other symbols, but may have '-' or '\_'.
 
-### Trash (premium)
+### Trash
 
 When in 'Trash' mode, all deleted nodes will be marked as trash and moved into trash folder. You can restore them by 'Normalize' function.
 
 You should select a trash folder node to enable trash mode. Any folder may be appoited as trash folder, even outside of working folder.
 
-### Recycle (premium)
+### Recycle
 
 'Recycle' engine may reuse these 'trash' nodes when you create new nodes.
 
 'Recycle' is designd to reuse node ids. Generally this is not necessary if you do not know what it is. So it is disabled by default.
 
-### Picking mode (pro)
+Trash folder reserves at least 50 nodes from recycling.
+
+### Picking mode
 
 Suppose you are viewing a page contains many links. You want to mark some of the links and read them another day. This is what we called "link picking".
 
 After switched to Picking mode, any links clicked with 'Ctrl' in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
+
+### hot folder
+
+Hot folder is a folder for shortcuts. You can put anything you like into it.
+
+### folder link label (test)
+
+You can use labels as folder shortcuts.
+
+format: '@' + 'folder id' + ':' + 'anything'
+eg: @100:books
 
 ### toolbar: Fold
 
@@ -87,7 +100,8 @@ Suppose you want to move several nodes into a folder.
 - Select all the nodes in a folder by click the left edge.
 - Move url nodes with [merge].
 - Remove marks of trash with 'normalize'.
-- Open link in new tab with 'Ctrl.
+- Open link in new tab with 'Ctrl'.
+- Drop to folder-shortcut-button.
 
 ## FAQ
 
