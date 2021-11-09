@@ -1,8 +1,17 @@
+# 0.3.0
+
+- drag with trash.
+- add folder-shortcut-bar drop support.
+- add bookmark hot-folder-bar.
+- add @folderId label support. (alpha)
+- add text edit mode for labels.
+- remove work space toggle buttons for simplify.
+
 # 0.2.0
 
 - add bookmark panel in web page with shotcut support.
 - fix: the color of scroll bar in dark mode.
-- fix: editor of bookmark tags and notes.
+- fix: editor of bookmark labels and notes.
 
 # 0.1.0
 
