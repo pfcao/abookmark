@@ -1,7 +1,9 @@
 # As note 0.3.0
 
 Think of bookmarks as notes.
+
 Advanced bookmark manager with labels, sticky notes, and trash mode.
+
 AsNote has the key features of onetab for tab managements, but use bookmarks as database.
 
 ## Features
@@ -70,9 +72,9 @@ Suppose you are viewing a page contains many links. You want to mark some of the
 
 After switched to Picking mode, any links clicked with 'Ctrl' in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
 
-### hot folder
+### top folder
 
-Hot folder is a folder for shortcuts. You can put anything you like into it.
+Top folder is a folder for shortcuts. You can put anything you like into it.
 
 ### folder link label (test)
 

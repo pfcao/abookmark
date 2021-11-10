@@ -1,8 +1,8 @@
 # 0.3.0
 
 - drag with trash.
-- add folder-shortcut-bar drop support.
-- add bookmark hot-folder-bar.
+- add folder-navigator drop support.
+- add bookmark top-folder.
 - add @folderId label support. (alpha)
 - add text edit mode for labels.
 - remove work space toggle buttons for simplify.
