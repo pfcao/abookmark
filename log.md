@@ -1,3 +1,12 @@
+# 0.4.0 [2021-11-20]
+
+- try to restore latest panel.
+- add or edit bookmarks with current tab information in a folder.
+- update notes in web pages after data changed.
+- fix: note height.
+- fix: edit modal - keep open if there is any error.
+- fix: recycle nodes only with correct data format.
+
 # 0.3.0
 
 - drag with trash.

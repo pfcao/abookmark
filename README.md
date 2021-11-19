@@ -1,4 +1,4 @@
-# As note 0.3.0
+# AsNote bookmark plus
 
 Think of bookmarks as notes.
 
@@ -20,6 +20,17 @@ AsNote has the key features of onetab for tab managements, but use bookmarks as 
 - Shortcuts
 - Popup bookmark tree view.
 
+## Tips
+
+- Select multi folders with 'Ctrl'.
+- Select a list of nodes with 'Shift'.
+- Select all the nodes in a folder by click the left edge.
+- Move url nodes with [merge].
+- Remove marks of trash with 'normalize', or just drag them out of trash folder.
+- Open link in new tab with 'Ctrl'.
+- Drop nodes on [home], [trash], [top]...
+- Attach folders as tags into [top] folder.
+
 ## Privacy
 
 All your data are stored in your browser system. AsNote do not transfer any of your data to anywhere else.
@@ -32,7 +43,7 @@ A node is a bookmark or a bookmark folder in Chromium.
 
 ### home folder node
 
-The Home folder is the starting folder of AsNote.
+The Home folder is the default starting folder of AsNote.
 
 ### inbox folder node
 
@@ -48,7 +59,7 @@ In app page, you can reopen these tabs/bookmarks by click the titles. But if you
 
 AsNote is built with performance in mind. You can save thousands of tabs easily. Your data's safety is guaranteed by your native bookmark system.
 
-### labels
+### labels/tags
 
 Labels should start width '#' and contain no other symbols, but may have '-' or '\_'.
 
@@ -94,16 +105,6 @@ Suppose you want to move several nodes into a folder.
 'Merge' unfolds all other selected folders(if they are folders) and moves them into(or beside) the last selected node.
 
 'Merge' is designed to merge several folders but it is also useful for bookmarks.
-
-## Tips
-
-- Select multi folders with 'Ctrl'.
-- Select a list of nodes with 'Shift'.
-- Select all the nodes in a folder by click the left edge.
-- Move url nodes with [merge].
-- Remove marks of trash with 'normalize'.
-- Open link in new tab with 'Ctrl'.
-- Drop to folder-shortcut-button.
 
 ## FAQ
 
