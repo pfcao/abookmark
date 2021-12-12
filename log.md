@@ -1,3 +1,30 @@
+# 0.5.0 [2021-12-10]
+
+add:
+
+- folder shortcuts.
+- temp folder.
+- #todo button in action bar.
+- url shortcuts in top folder.
+- search: star & note button in search box.
+- settings: option page.
+- settings: start page selector.
+- startup review mode.
+- unselect nodes by 'Escape'.
+
+change:
+
+- new design of popup panel.
+- rewritten virtual render engine.
+- max-width.
+- search: improve search engine.
+- note: improve stability.
+
+fix:
+
+- update notes in pages after bookmark deleted.
+- the width of long folder names.
+
 # 0.4.0 [2021-11-20]
 
 - try to restore latest panel.

@@ -1,4 +1,4 @@
-# AsNote bookmark plus
+# AsNote #bookmark preview
 
 Think of bookmarks as notes.
 
@@ -19,6 +19,7 @@ AsNote has the key features of onetab for tab managements, but use bookmarks as 
 - Auto sync.
 - Shortcuts
 - Popup bookmark tree view.
+- Load thousands of nodes without lagging.
 
 ## Tips
 
@@ -28,8 +29,10 @@ AsNote has the key features of onetab for tab managements, but use bookmarks as 
 - Move url nodes with [merge].
 - Remove marks of trash with 'normalize', or just drag them out of trash folder.
 - Open link in new tab with 'Ctrl'.
-- Drop nodes on [home], [trash], [top]...
+- Open link in current tab with 'Alt'.
+- Drop nodes on nav buttons ([home], [trash], [top]...).
 - Attach folders as tags into [top] folder.
+- Unselect nodes by 'Escape' key.
 
 ## Privacy
 
