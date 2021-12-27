@@ -1,3 +1,23 @@
+# 0.6.0 [2021-12-27]
+
+add:
+
+- main panel: grid view.
+- top folder auto grid view.
+- settings: extension icon startup modes.
+- settings: selection auto clear modes.
+- droppable inbox folder tags. The tags of inbox folder will be shown in the side bar.
+- folder checkbox.
+
+changes:
+
+- For simplicity, we always set 'Other bookmarks/favorites' as 'home folder' and set 'Bookmarks/Favorites bar' as 'top folder'.
+- click a node's icon to show it's details / edit it.
+- right click on a checkbox to select it alone.
+- right click on a node title to view its details.
+- note: max-length -> 500.
+- new date stamp format.
+
 # 0.5.0 [2021-12-10]
 
 add:
@@ -12,16 +32,13 @@ add:
 - startup review mode.
 - unselect nodes by 'Escape'.
 
-change:
+changes:
 
 - new design of popup panel.
 - rewritten virtual render engine.
 - max-width.
 - search: improve search engine.
-- note: improve stability.
-
-fix:
-
+- note: improve stability by shadow dom.
 - update notes in pages after bookmark deleted.
 - the width of long folder names.
 

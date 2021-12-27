@@ -1,38 +1,41 @@
-# AsNote #bookmark preview
+# AsNote #bookmark preview 0.6.0
 
 Think of bookmarks as notes.
 
 Advanced bookmark manager with labels, sticky notes, and trash mode.
 
-AsNote has the key features of onetab for tab managements, but use bookmarks as database.
+AsNote has the key features of onetab for tab managements, but use bookmarks as backend.
 
 ## Features
 
 - Cooperate with native bookmark system.
 - Labels/Tags.
-- The key features of onetab.
-- Sticky notes in web page.
+- Tab managements.
+- Sticky notes in web pages.
 - Trash and Recycle mode.
-- Picking mode.
-- Advanced bookmark management.
+- Link Picking.
 - Export a selected bookmark folder.
 - Auto sync.
 - Shortcuts
-- Popup bookmark tree view.
-- Load thousands of nodes without lagging.
+- Tree view.
+- Grid view.
 
 ## Tips
 
 - Select multi folders with 'Ctrl'.
 - Select a list of nodes with 'Shift'.
-- Select all the nodes in a folder by click the left edge.
+- Select all the nodes in a subfolder by click the left edge of that openned folder.
 - Move url nodes with [merge].
-- Remove marks of trash with 'normalize', or just drag them out of trash folder.
 - Open link in new tab with 'Ctrl'.
 - Open link in current tab with 'Alt'.
+- click a node's icon to edit it.
+- right click on a checkbox to select it exclusively.
+- right click on a node title to view its details.
 - Drop nodes on nav buttons ([home], [trash], [top]...).
+- Unset a nav/sys folder node by set it again.
 - Attach folders as tags into [top] folder.
-- Unselect nodes by 'Escape' key.
+- Remove marks of trash with 'normalize', or just drag them out of trash folder.
+- Unselect all nodes by 'Escape', or by click the parentheses in the action bar.
 
 ## Privacy
 
@@ -48,9 +51,17 @@ A node is a bookmark or a bookmark folder in Chromium.
 
 The Home folder is the default starting folder of AsNote.
 
+Asnote uses the 'Other bookmarks/favorites' as home folder by default.
+
 ### inbox folder node
 
 Newly created bookmarks will be put into the subfolders of inbox folder. If there is no inbox folder appoited, home folder will be used as inbox.
+
+### top folder
+
+Top folder is a folder for shortcuts. You can put anything you like into it.
+
+Asnote uses the 'Bookmarks/Favorites bar' as top folder by default.
 
 ### onetab
 
@@ -78,7 +89,7 @@ You should select a trash folder node to enable trash mode. Any folder may be ap
 
 'Recycle' is designd to reuse node ids. Generally this is not necessary if you do not know what it is. So it is disabled by default.
 
-Trash folder reserves at least 50 nodes from recycling.
+Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default.
 
 ### Picking mode
 
@@ -86,16 +97,14 @@ Suppose you are viewing a page contains many links. You want to mark some of the
 
 After switched to Picking mode, any links clicked with 'Ctrl' in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
 
-### top folder
-
-Top folder is a folder for shortcuts. You can put anything you like into it.
-
 ### folder link label (test)
 
 You can use labels as folder shortcuts.
 
 format: '@' + 'folder id' + ':' + 'anything'
 eg: @100:books
+
+Be careful: 'id's can not be imported from backups. So, this function is not suppported by AsNote officially. It may be removed in the future.
 
 ### toolbar: Fold
 
