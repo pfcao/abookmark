@@ -1,4 +1,4 @@
-# AsNote #bookmark preview 0.6.0
+# AsNote Other bookmarks preview
 
 Think of bookmarks as notes.
 
@@ -8,34 +8,35 @@ AsNote has the key features of onetab for tab managements, but use bookmarks as 
 
 ## Features
 
-- Cooperate with native bookmark system.
 - Labels/Tags.
 - Tab managements.
 - Sticky notes in web pages.
 - Trash and Recycle mode.
 - Link Picking.
-- Export a selected bookmark folder.
-- Auto sync.
-- Shortcuts
+- Link sailing.
 - Tree view.
 - Grid view.
+- Data text editor.
+- Export any selected bookmark folder.
+- Cooperate with native bookmark system.
+- Auto sync.
+- Shortcuts
 
 ## Tips
 
-- Select multi folders with 'Ctrl'.
 - Select a list of nodes with 'Shift'.
+- Unselect all nodes by 'Escape', or by click the parentheses in the action bar.
 - Select all the nodes in a subfolder by click the left edge of that openned folder.
-- Move url nodes with [merge].
-- Open link in new tab with 'Ctrl'.
-- Open link in current tab with 'Alt'.
-- click a node's icon to edit it.
+- Folder left edge context menu: advanced selection commands.
 - right click on a checkbox to select it exclusively.
 - right click on a node title to view its details.
-- Drop nodes on nav buttons ([home], [trash], [top]...).
-- Unset a nav/sys folder node by set it again.
-- Attach folders as tags into [top] folder.
+
 - Remove marks of trash with 'normalize', or just drag them out of trash folder.
-- Unselect all nodes by 'Escape', or by click the parentheses in the action bar.
+- click a node's icon to edit it.
+- Move bookmarks with [merge].
+- Drop nodes into nav buttons ([home], [trash], [top]...) to move them.
+- Drop nodes into outlined tags (#todo, #!trending...) to tag them.
+- [inbox] folder tags will be shown in nav tag bar (under nav buttons).
 
 ## Privacy
 
@@ -75,7 +76,15 @@ AsNote is built with performance in mind. You can save thousands of tabs easily.
 
 ### labels/tags
 
-Labels should start width '#' and contain no other symbols, but may have '-' or '\_'.
+User tags should start with '#' and contain no other symbols, but may have '-' or '\_'.
+
+All other symbols are reserved by AsNote.
+
+'@' tags are for all kinds of links. Generally they are created automatically by AsNote.
+
+'#!' tags are for macros.
+
+'$' tags are reserved for system usage.
 
 ### Trash
 
@@ -91,12 +100,6 @@ You should select a trash folder node to enable trash mode. Any folder may be ap
 
 Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default.
 
-### Picking mode
-
-Suppose you are viewing a page contains many links. You want to mark some of the links and read them another day. This is what we called "link picking".
-
-After switched to Picking mode, any links clicked with 'Ctrl' in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
-
 ### folder link label (test)
 
 You can use labels as folder shortcuts.
@@ -104,7 +107,7 @@ You can use labels as folder shortcuts.
 format: '@' + 'folder id' + ':' + 'anything'
 eg: @100:books
 
-Be careful: 'id's can not be imported from backups. So, this function is not suppported by AsNote officially. It may be removed in the future.
+Be careful: 'id's can not be imported from backups. So, this feature is not suppported by AsNote officially. It may be removed in the future.
 
 ### toolbar: Fold
 
@@ -117,6 +120,33 @@ Suppose you want to move several nodes into a folder.
 'Merge' unfolds all other selected folders(if they are folders) and moves them into(or beside) the last selected node.
 
 'Merge' is designed to merge several folders but it is also useful for bookmarks.
+
+### link picking
+
+Suppose you are viewing a page contains many links. You want to mark some of the links and read them another day. This is what we called "link picking".
+
+After switched to Picking mode, any links clicked with 'Ctrl' (by default) in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
+
+### link sailing
+
+Generally a bookmark is a note of a 'static' url. But sometimes this is not the best choice. For example, I am surfing from bookmark of site/page1, then I go to site/page2, site/page3... Now I want my bookmark to point to site/page3. AsNote can do this automatically. This is the 'link sailing'.
+
+When in sailing mode, AsNote will always update the bookmark to the latest page of that site you are surfing. That page will inherit the former notes and tags.
+
+When a tab is in link sailing mode, there will be a 'S' shown in the extention icon badge.
+
+How to trigger 'link sailing'?
+
+- Click a bookmark in AsNote tagged with #!sailing.
+- Click a bookmark in AsNote whose parent folder tagged with #!sailing.
+- Click a bookmark in AsNote with alt/shift according to your settings.
+- Trigger 'toggle sail mode' command in any web page bookmarked.
+
+How to exit 'link sailing'?
+
+- Go to another site.
+- Close that tab.
+- Trigger 'toggle sail mode' command in that web page.
 
 ## FAQ
 
