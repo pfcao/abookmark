@@ -1,3 +1,55 @@
+# 0.8.0 [2022-02-20]
+
+add:
+
+- top bar.
+- spread view.
+- mini sidebar.
+- filter.
+- id tag.
+
+changes:
+
+- search bar: auto input. You can trigger the search in almost anywhere by just type your words.
+
+id tag:
+
+format: '@' + 'folder id' + ':' + 'anything'
+eg: @100:books
+
+The 'id' may be omitted. Then id tag becomes: '@:' + 'node_name'
+eg: @:books
+
+The 'node_name' can be any part of that node's title. When you click a id tag, AsNote will search out all titles matched the 'node_name'.
+
+Unlike '#' tags, you can not drop into id tags to toggle the tag. But a id tag (of inbox folder on the left side bar) is droppable as a shortcut of the corresponding folder node if it matchs only one folder node.
+
+filter:
+
+The 'filter' only effects the first level nodes in main panel. It does not change the database, but only rearranges the view dynamicaly.
+
+You can use filter to do something as 'search in current folder'.
+
+You can use 'regular expression' in the filter, just as in the 'search'.
+
+top bar:
+
+Top bar is similar to chrome/edge's bookmark bar, but it is more 'spreaded'.
+
+You can load the top bar by its keyboard shortcut. If the top bar 'trigger' is active (in settings), you can load the top bar by click (or hover by mouse) on the top of the left edge in a typical web page.
+
+A 'typical web page' is a normal 'http/https' web page.
+
+Top bar is read only.
+
+spread view:
+
+Spread view is a form of top bar menu in main app panel. Unlike top bar, it supports basic dragging / dropping.
+
+Left click on the 'arrows' in a folder (or drag a node upon the right arrow) to load its spread view.
+
+Click the icons in spread menu to edit the corresponding node.
+
 # 0.7.0 [2022-01-20]
 
 add:
