@@ -1,5 +1,7 @@
 # Abookmark asnote preview
 
+Think of bookmarks as notes.
+
 Advanced bookmark manager comes with labels, sticky notes, and trash mode.
 
 Abookmark has the key features of onetab for tab managements, but use bookmarks as backend.
@@ -17,9 +19,11 @@ Abookmark has the key features of onetab for tab managements, but use bookmarks 
 - Spread view & top bar.
 - Data text editor.
 - Export any bookmark folder.
+- Import selected bookmarks from a file.
+- Monthly backup.
 - Cooperate with native bookmark system.
 - Auto sync.
-- Shortcuts
+- Shortcuts.
 
 ## Privacy
 
@@ -31,14 +35,15 @@ All your data are stored in your browser. Abookmark do not transfer any of your 
 - Unselect all nodes by 'Escape', or by click the parentheses in the action bar.
 - Select all the nodes in a subfolder by click the left edge of that open folder.
 - Folder left edge context menu: advanced selection commands.
-- right click on a checkbox to select it exclusively.
-- right click on a node title to view its details.
+- Right click on a checkbox to select it exclusively.
+- Right click on a node title to view its details.
 - Remove marks of trash with 'normalize', or just drag them out of trash folder.
-- click a node's icon to edit it.
+- Click a node's icon to edit it.
 - Move bookmarks with [merge].
 - Drop nodes into nav buttons ([home], [trash], [top]...) to move them.
 - Drop nodes into outlined tags (#todo, #!trending...) to tag them.
 - [inbox] folder tags will be shown in nav tag bar (under nav buttons).
+- Search: Ctrl+F.
 
 ## Concepts
 
@@ -173,8 +178,6 @@ Top bar is similar to chrome/edge's bookmark bar, but it is more 'spreaded'.
 You can load the top bar by its keyboard shortcut. If the top bar 'trigger' is active (in settings), you can load the top bar by click (or hover by mouse) on the top of the left edge in a typical web page.
 
 A 'typical web page' is a normal 'http/https' web page.
-
-Top bar is read only.
 
 ### spread view:
 

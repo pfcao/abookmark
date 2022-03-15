@@ -1,3 +1,17 @@
+# 0.9.0 [2022-03-15]
+
+add:
+
+- JSON import/export.
+- auto monthly backup.
+- settings: duplicate url.
+- settings: new tab background.
+- Top bar: drag & drop support.
+
+fix:
+
+- search bar: text composition system.
+
 # 0.8.0 [2022-02-20]
 
 add:
@@ -7,10 +21,6 @@ add:
 - mini sidebar.
 - filter.
 - id tag.
-
-changes:
-
-- search bar: auto input. You can trigger the search in almost anywhere by just type your words.
 
 id tag:
 
