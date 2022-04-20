@@ -4,7 +4,7 @@ Think of bookmarks as notes.
 
 Advanced bookmark manager comes with labels, sticky notes, and trash mode.
 
-Abookmark has the key features of onetab for tab managements, but use bookmarks as backend.
+Abookmark has the key features of onetab for tab management, and it saves tabs as bookmarks.
 
 ## Features
 
@@ -27,7 +27,7 @@ Abookmark has the key features of onetab for tab managements, but use bookmarks 
 
 ## Privacy
 
-All your data are stored in your browser. Abookmark do not transfer any of your data to anywhere else.
+All your bookmarks are stored in your browser system. Abookmark does not transfer any of your data to anywhere else.
 
 ## Tips
 

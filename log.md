@@ -1,3 +1,25 @@
+# 0.10.0 [2022-04-20]
+
+add:
+
+- bookmark divider.
+- shortcuts: save current tab.
+- new tab: bing wallpapers.
+- spread: context menu.
+- settings: spread - topsites.
+- duplicate bookmark checker.
+- extension icon: bookmark(or remove) current tab directly.
+
+improve:
+
+- notes: resizable.
+- title hovers with node path.
+- search.
+
+change:
+
+- restore/open: will open all bookmarks in a folder (include subfolders).
+
 # 0.9.0 [2022-03-15]
 
 add:
