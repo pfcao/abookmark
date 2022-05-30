@@ -1,3 +1,20 @@
+# 0.12.0 [2022-05-30]
+
+add:
+
+- link view in edit panel.
+- search panel.
+
+The search box supports javascript regular expressions. Now we add a panel to generate regular expressions for title/label/url. And we add some keywords for searching.
+
+change:
+
+- Text Editor.
+
+In the 'Edit' mode, a node is updated by its id if the corresponding bookmark can be found. Nodes without 'id' field are treated as new bookmarks. A node with '-id' field instead of 'id' field will be removed.
+
+All nodes are treated as new bookmarks if you are in the 'Create' mode.
+
 # 0.10.0 [2022-04-20]
 
 add:
