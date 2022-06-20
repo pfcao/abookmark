@@ -1,3 +1,20 @@
+# 0.14.0 [2022-06-20]
+
+add:
+
+- settings: topbar background color.
+- settings: topbar click to open in current tab.
+- bookmark bar: If you want to show the title of a bookmark in top bar instead of its favicon you can put letter '!' in front of its title.
+
+improve:
+
+- stability of note & nav trigger
+
+fix:
+
+- spread view drag & drop.
+- create note in unsaved page.
+
 # 0.12.0 [2022-05-30]
 
 add:

@@ -45,6 +45,7 @@ All your bookmarks are stored in your browser system. Abookmark does not transfe
 - Drop nodes into outlined tags (#todo, #!trending...) to tag them.
 - [inbox] folder tags will be shown in nav tag bar (under nav buttons).
 - Search: Ctrl+F.
+- If you want to show the title of a bookmark in top bar instead of its favicon you can put letter '!' in front of its title.
 
 ## Concepts
 
