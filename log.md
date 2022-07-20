@@ -1,3 +1,16 @@
+abookmark.dev@outlook.com
+
+# 0.16.0 [2022-07-20]
+
+add:
+
+- settings: toggle topbar bookmark title.
+
+improve:
+
+- settings/option page.
+- topbar drag & drop
+
 # 0.14.0 [2022-06-20]
 
 add:
