@@ -1,5 +1,5 @@
 // download onetab data as bookmarks
-// by: AsNote, pfcao
+// by: Abookmark AsNote, pfcao
 // 1. open the onetab display page in your browser.
 // 2. open the 'developer tools' panel of your browser. (Ctrl+Shif+i)
 // 3. click 'console' tab of the 'developer tools'.
@@ -36,6 +36,6 @@ chrome.storage.local.get('state', storage => {
 			}[${new Date(group.createDate).toJSON().split('T')[0]}]</H3>\n<DL>\n${tabs}\n</DL>`
 		})
 		.join('\n')
-	const bm = URL.createObjectURL(new Blob([html], { type: 'text/plain' }))
+	const bm = URL.createObjectURL(new Blob(['<DL>\n', html, '\n</DL>'], { type: 'text/plain' }))
 	downloadBlob(dateNow + '_onetab2bookmarks.html', bm)
 })

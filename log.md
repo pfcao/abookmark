@@ -1,5 +1,52 @@
 abookmark.dev@outlook.com
 
+tips:
+
+Extentions are forbidden to run inside system pages, other extention pages or chrome/edge store for security.
+
+# 0.20.0 [2022-08-20]
+
+add:
+
+- hotkey: undo: Ctrl + z. It works sometimes.
+- hotkey: 'delete' to remove selected nodes.
+- tags: Alt + click to remove the tag from the node.
+- topbar: Ctrl/Shift+click on the icon of a node to multi-select.
+- topbar: option page button on the right corner.
+- spread: Click on the icons to edit.
+- settings: Full date stamp for new floders.
+- settings: Link picking : auto stop.
+- settings: Spread arrow.
+- editor: create folder.
+- editor: Ctrl + enter to submit.
+- context menu: store tabs in context.
+- bookmarklet.
+
+improve:
+
+- json & html file loader and virtual node preview.
+- reveal & related button.
+- toolbar.
+
+From this version, 'all_urls' permission is not required but optional if you do not need the sticky notes & nav triggers in page.
+
+fixed:
+
+- settings: popup start from gridview
+
+removed:
+
+- bookmark divider.
+- top sites.
+
+deprecated:
+
+The following functions may be removed in next version.
+
+- Folder left edge context menu: advanced selection commands.
+- Drop nodes into outlined tags (#todo, #!trending...) to tag them.
+- [inbox] folder tags will be shown in nav tag bar (under nav buttons).
+
 # 0.16.0 [2022-07-20]
 
 add:
@@ -39,7 +86,7 @@ The search box supports javascript regular expressions. Now we add a panel to ge
 
 change:
 
-- Text Editor.
+- data editor.
 
 In the 'Edit' mode, a node is updated by its id if the corresponding bookmark can be found. Nodes without 'id' field are treated as new bookmarks. A node with '-id' field instead of 'id' field will be removed.
 
@@ -235,7 +282,7 @@ changes:
 
 # 0.2.0
 
-- add bookmark panel in web page with shotcut support.
+- add bookmark panel in web page with shortcut support.
 - fix: the color of scroll bar in dark mode.
 - fix: editor of bookmark labels and notes.
 
