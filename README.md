@@ -4,6 +4,8 @@ Advanced bookmark manager comes with labels, sticky notes, and trash mode.
 
 Abookmark has the key features of onetab for tab management, and it saves tabs as bookmarks.
 
+[中](README-zh.md)
+
 ## Features
 
 - Labels/Tags.
@@ -11,18 +13,19 @@ Abookmark has the key features of onetab for tab management, and it saves tabs a
 - Sticky notes in web pages.
 - Trash and Recycle mode.
 - Advanced search.
-- Link Picking.
+- Link picking.
 - Link sailing.
 - Tree view.
 - Grid view.
-- Spread view & top bar.
+- Spread view & top bar / nav page.
 - Data text editor.
 - Export any bookmark folder.
 - Import selected bookmarks from a file.
 - Monthly backup.
 - Cooperate with native bookmark system.
 - Auto sync.
-- Shortcuts.
+- Keyboard shortcuts.
+- Link hint.
 
 ## Privacy
 
@@ -33,21 +36,23 @@ All your bookmarks are stored in your browser system. Abookmark does not transfe
 - Unselect all nodes by 'Escape'.
 - Select a list of nodes with 'Shift' on checkbox.
 - Right click on a checkbox to select it exclusively.
-- Select all the nodes in a subfolder by click the left edge of that open folder.
+- Select all the nodes in a subfolder by click the left edge of that openned folder.
 - Remove marks of trash with 'normalize', or just drag them out of trash folder.
 - Click a node's icon to edit it.
 - Move bookmarks with [merge].
-- Drop nodes into nav buttons ([home], [trash], [top]...) to move them.
-- If you want to show the title of a bookmark in top bar instead of its favicon you can put letter '!' in front of its title.
+- Drop nodes into nav buttons ([home], [trash], [top]...).
+- If you want to show the title of a bookmark in top bar you can put a letter '!' in front of its title.
 
 ## Shortcuts
 
-- Search: Ctrl+f.
-- Undo: Ctrl + z.
-- Clear selection: Escape.
-- Remove a node: Delete.
-- Remove a tag: Alt + click.
+- Search: Ctrl +f
+- Undo: Ctrl + z
+- Clear selection: Escape
+- Remove a node: Delete
+- Remove a tag: Shift + click
 - Save in bookmark editor: Ctrl + enter
+- Spread view (for any tag/folder): Alt + click
+- Link hint: `f`, `f.`
 
 ## Concepts
 
@@ -119,15 +124,6 @@ You should select a trash folder node to enable trash mode. Any folder may be ap
 
 Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default.
 
-### folder link label (test)
-
-You can use labels as folder shortcuts.
-
-format: '@' + 'folder id' + ':' + 'anything'
-eg: @100:books
-
-Be careful: 'id's can not be imported from backups. So, this feature is not suppported by Abookmark officially. It may be removed in the future.
-
 ### toolbar: Fold
 
 'Fold' creates a new folder besides the last selected node and moves all selected nodes into that folder.
@@ -179,17 +175,19 @@ You can use 'regular expression' in the filter, just as in the 'search'.
 
 Top bar is similar to chrome/edge's bookmark bar, but it is more 'spreaded'.
 
-You can load the top bar by its keyboard shortcut. If the top bar 'trigger' is active (in settings), you can load the top bar by click (or hover by mouse) on the top of the left edge in a typical web page.
+You can load the top bar by its keyboard shortcut. If the top bar 'trigger' is active (in settings), you can load the top bar by click on the top of the left edge in a typical web page.
 
 A 'typical web page' is a normal 'http/https' web page.
 
 ### spread view:
 
-Spread view is a form of top bar menu in main app panel. Unlike top bar, it supports basic dragging / dropping.
+Spread view is the backend of top bar menu, and it works in app page as well. It supports basic dragging / dropping.
 
 Left click on the 'arrows' in a folder (or drag a node upon the right arrow) to load its spread view.
 
-Click the icons in spread menu to edit the corresponding node.
+Since v0.21, a icon is a checkbox at the same time. You can use Shift to select successive nodes.
+
+Alt + Click the icons in spread menu to reveal the corresponding node.
 
 ### search:
 
@@ -207,7 +205,7 @@ All nodes are treated as new bookmarks if you are in the 'Create' mode.
 
 ### Why do Abookmark need permission of "Site access On all sites"?
 
-This is necessary only if you want to show sticky notes in web pages automatically (and to load the top bar trigger since v0.8). You can disable that permission (in extention detail page) if you do not need it. This does not affect any other features.
+This is necessary only if you want to show sticky notes in web pages automatically (and to load the top bar trigger since v0.8). This does not affect any other features.
 
 ### May I rename the folders created by Abookmark?
 
@@ -250,3 +248,5 @@ Some other in page bookmark extention will load the bookmarks into every page be
 ## Buy me a coffee.
 
 paypal: <https://paypal.me/pfcao>
+
+abookmark.dev@outlook.com

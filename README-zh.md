@@ -23,20 +23,22 @@ Abookmark 是一款专业书签及标签页管理插件, 与 chrome/edge 原生�
 ## Tips
 
 - 'Escape': 清空选择.
-- 'Shift'+点击 在复选框或节点图标选择连续的节点, 'Ctrl' 多选节点.
-- 点击节点的图标: 编辑该节点.
-- 右击复选框: 单选该节点.
+- 'Shift'+点击 复选框选择连续的节点, 'Ctrl' 多选节点.
 - 点击子文件夹的左侧空白选择所有其下的节点.
 - 将回收站的节点拉到其它文件夹使其恢复正常.
 - 用 [合并] 移动节点.
-- 导航栏中 "!" 开头的标题不会隐藏.
+- 导航栏用 "!" 开头强制显示标题.
 
 ## Shortcuts
 
-- Search: Ctrl+f.
-- Undo: Ctrl + z.
-- Clear selection: Escape.
-- Remove: Delete.
+- 搜索: Ctrl +f
+- 回退: Ctrl + z
+- 清空选择: Escape
+- 删除节点: Delete
+- 删除标签: Shift + click
+- 编辑界面保存: Ctrl + enter
+- Spread view (for any tag/folder): Alt + click
+- Link hint: `f`, `f.`
 
 ## 概念
 
@@ -60,19 +62,18 @@ Abookmark 是一款专业书签及标签页管理插件, 与 chrome/edge 原生�
 
 ### onetab
 
-A 'tab' in onetab is nothing but a bookmark node in Abookmark.
+在 onetab 中所保存的所谓的标签页不过是 Abookmark 中的一个普通书签.
 
-Save [one tab] / [all the tabs] / [tabs on the right] to inbox folder and close these tabs.
+收存: 缺省情况下, Abookmark 将指定标签页 "收存" 于 收件箱文件夹 下的子文件夹 并关闭标签. 收存一个以上的标签页时会创建新文件夹.
 
-In app page, you can reopen these tabs/bookmarks by click the titles. But if you click the urls on the right side, the node will be removed at the same time. This is what we called 'restore'.
+恢复: 点击恢复按钮或者网址时 Abookmark 会打开对应网址并移除书签.
 
-Abookmark is built with performance in mind. You can save thousands of tabs easily. Your data's safety is guaranteed by your native bookmark system.
-
+与 onetab 相比, Abookmark 可以轻松浏览上万节点, 这些数据由原生书签系统保存并同步.
 ### labels/tags
 
-User tags should start with '#' and contain no other symbols, but may have '-' or '\_'.
+标签应该以 '#' 开始, 并不要包含 '-' 或 '\_' 之外的任何符号. 虽然 Abookmark 对此并不强制.
 
-All other symbols are reserved by Abookmark.
+Abookmark 申明保留所有其它符号.
 
 '@' tags are for all kinds of links. Generally they are created automatically by Abookmark.
 
@@ -82,44 +83,31 @@ All other symbols are reserved by Abookmark.
 
 ### Trash
 
-When in 'Trash' mode, all deleted nodes will be marked as trash and moved into trash folder. You can restore them by 'Normalize' function.
+指定垃圾箱文件夹后, 普通节点被删除时会移入垃圾箱, 并标记为垃圾. 将节点拖拽出垃圾箱可使其恢复正常.
 
-You should select a trash folder node to enable trash mode. Any folder may be appoited as trash folder, even outside of working folder.
+删除有垃圾标记的节点会使其彻底删除.
 
 ### Recycle
 
-'Recycle' engine may reuse these 'trash' nodes when you create new nodes.
+启用回收功能后, 会使用垃圾节点来创建新节点.
 
-'Recycle' is designd to reuse node ids. Generally this is not necessary if you do not know what it is. So it is disabled by default.
+回收功能是为防止id快速增长,  通常这是没有必要的, 因此默认并不开启回收功能. 
 
-Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default.
-
-### folder link label (test)
-
-You can use labels as folder shortcuts.
-
-format: '@' + 'folder id' + ':' + 'anything'
-eg: @100:books
-
-Be careful: 'id's can not be imported from backups. So, this feature is not suppported by Abookmark officially. It may be removed in the future.
+100以内的垃圾节点并不会被收回.
 
 ### toolbar: Fold
 
-'Fold' creates a new folder besides the last selected node and moves all selected nodes into that folder.
-
-Suppose you want to move several nodes into a folder.
+"打包" 会将所选节点包裹到一新建文件夹.
 
 ### toolbar: Merge
 
-'Merge' unfolds all other selected folders(if they are folders) and moves them into(or beside) the last selected node.
+'归并' 会将所有其它所选节点 '拆包', 并移入最末所选节点.
 
-'Merge' is designed to merge several folders but it is also useful for bookmarks.
+如果最末节点不是文件夹, 这些拆包后的节点会移至其后.
 
 ### link picking
 
-Suppose you are viewing a page contains many links. You want to mark some of the links and read them another day. This is what we called "link picking".
-
-After switched to Picking mode, any links clicked with 'Ctrl' (by default) in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
+开启链接采集模式后, 新开启的标签页(通常用Ctrl)会被自动收存. 默认情况下, 切换到其它标签页会退出采集模式.
 
 ### link sailing
 
@@ -154,33 +142,34 @@ The 'node_name' can be any part of that node's title. When you click a id tag, A
 
 Unlike '#' tags, you can not drop into id tags to toggle the tag. But a id tag (of inbox folder on the left side bar) is droppable as a shortcut of the corresponding folder node if it matchs only one folder node.
 
-### filter:
-
-The 'filter' only effects the first level nodes in main panel. It does not change the database, but only rearranges the view dynamicaly.
-
-You can use filter to do something as 'search in current folder'.
-
-You can use 'regular expression' in the filter, just as in the 'search'.
-
 ### top bar:
 
-Top bar is similar to chrome/edge's bookmark bar, but it is more 'spreaded'.
+Topbar 相当于书签栏, 但它也是自成一页的, 称为导航页.
 
-You can load the top bar by its keyboard shortcut. If the top bar 'trigger' is active (in settings), you can load the top bar by click (or hover by mouse) on the top of the left edge in a typical web page.
+可以通过如下渠道开启 topbar:
 
-A 'typical web page' is a normal 'http/https' web page.
+1, 设定浏览器系统快捷键.
+2, 开启页内触发器.
+3, 开启新标签页加载导航页功能.
+4, 通过其它界面提供的topbar启动按钮或菜单.
 
 ### spread view:
 
-Spread view is a form of top bar menu in main app panel. Unlike top bar, it supports basic dragging / dropping.
+扩展视图是尽可能利用屏幕展示所有节点的单屏多级多栏菜单模式.
 
-Left click on the 'arrows' in a folder (or drag a node upon the right arrow) to load its spread view.
+扩展视图是 topbar 的主视图, 同时在书签管理器中也可以触发. 所有文件夹或标签都可以用扩展视图展示. 通过 Alt 键来选择 是否触发扩展视图.
 
-Click the icons in spread menu to edit the corresponding node.
+### filter:
+
+'filter' 并不改变数据本身, 而是在运行时改变节点的显示.
+
+'filter' 仅对当前文件夹下的节点起作用.
+
+You can use 'regular expression' in the filter, just as in the 'search'.
 
 ### search:
 
-The search box supports javascript regular expressions (regex). We add some keywords for search, and they can be generated by search panel.
+搜索框支持js的正则表达式. 系统提供了几个关键词, 但在内部仍然会转化为相应的正则表达式.
 
 ### text editor:
 
@@ -192,37 +181,32 @@ All nodes are treated as new bookmarks if you are in the 'Create' mode.
 
 ## FAQ
 
-### Why do Abookmark need permission of "Site access On all sites"?
+### 可以修改 Abookmark 创建的文件夹名称吗?
 
-This is necessary only if you want to show sticky notes in web pages automatically (and to load the top bar trigger since v0.8). You can disable that permission (in extention detail page) if you do not need it. This does not affect any other features.
+可以.
 
-### May I rename the folders created by Abookmark?
+书签系统的任何数据都可以随意修改, ab 并不加以限制. 但因为 chrome 无法在导入书签时指定创建时间, 建议在标题中保留日期信息.
 
-Of course.
+### 如何导入导出书签?
 
-Since bookmark importing can not restore the 'create date', we suggest you keep the 'date' in the folder name, but this is not enforced.
+ab 的所有书签数据均保存于原生书签系统之内, 可以通过原生书签管理器来导入导出.
 
-### How to import/export data?
+ab 另提供指定文件夹的导出及浏览. 浏览时可以通过拖拽将选定节点复制到书签系统, 实现精确导入.
 
-Abookmark is just bookmarks.
-You can use the native bookmark manager to import/export all the data.
+### 如何从 onetab 迁入?
 
-### May I transfer my data from onetab?
-
-Yes.
-
-You can import onetab's export data into bookmarks directly. But that data has no folder or date information. We write a little exporter to parse and download the full data as bookmarks:
+onetab 自身可以导出数据供原生书签导入, 但这一数据仅是所有网址的列表, 并不带有分组及日期信息. 我们写了一个简单的脚本, 可以导出更多的有用信息. 
 
 <https://raw.githubusercontent.com/pfcao/asnote/main/onetab-to-bookmarks.js>
 
-### What's the benefits if I switch from onetab?
+### 比 onetab 有什么优势?
 
-- Sync across browsers. You can even view the saved 'tabs' ( as bookmarks) on your mobile phone.
-- Transform smoothly from 'saved tabs' to bookmarks at any time.
-- As bookmarks, you can see (from the 'star' in the address bar) whether that page has been saved before. You can remove saved pages directly by clicking that bookmark icon (or our app icon, with trash support).
-- Backup without losing data structures.
-- Fast.
-- Trash.
+- 打通 "保存的标签页" 与 "书签", 两者可以随意转换. 从程序的角度来说两者本并没有区别, 存于两个系统会人为制造隔阂与麻烦.
+- 可以通过文件夹, 标签及各管理功能来更方便的整理数据.
+- 可以通过浏览器星标看到某页是否已经保存过了, 并直达该节点.
+- 原生同步. 甚至可以在手机中查看.
+- 完善的导入导出, 避免数据丢失.
+- 启动迅速, 轻松支持上万节点.
 
 ### Is Abookmark running in all web pages in the background?
 
@@ -237,3 +221,5 @@ Some other in page bookmark extention will load the bookmarks into every page be
 ## Buy me a coffee.
 
 paypal: <https://paypal.me/pfcao>
+
+abookmark.dev@outlook.com

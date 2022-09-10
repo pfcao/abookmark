@@ -16,9 +16,9 @@ chrome.storage.local.get('state', storage => {
 		element.click()
 		document.body.removeChild(element)
 	}
-	const dateNow = new Date().toJSON()
+	const dateNow = new Date().toJSON().substring(0, 10)
 	const jsonStateBlobURL = URL.createObjectURL(new Blob([storage.state], { type: 'text/plain' }))
-	downloadBlob(dateNow + '_onetab.json', jsonStateBlobURL)
+	downloadBlob(dateNow + '_onetab_data.txt', jsonStateBlobURL)
 	const state = JSON.parse(storage.state)
 	const html = state.tabGroups
 		.reverse()
@@ -31,9 +31,9 @@ chrome.storage.local.get('state', storage => {
 						pre + `<DT><A HREF="${mt.url}" ADD_DATE="${date}">${mt.title}</A>\n`,
 					'',
 				)
-			return `<DT><H3 ADD_DATE="${date}">${group.starred || group.locked ? '* ' : ''}${
-				group.label ? group.label + ' ' : ''
-			}[${new Date(group.createDate).toJSON().split('T')[0]}]</H3>\n<DL>\n${tabs}\n</DL>`
+			return `<DT><H3 ADD_DATE="${date}">${group.starred || group.locked ? '* ' : ''}[${
+				new Date(group.createDate).toJSON().split('T')[0]
+			}] ${group.label ?? ''}</H3>\n<DL>\n${tabs}\n</DL>`
 		})
 		.join('\n')
 	const bm = URL.createObjectURL(new Blob(['<DL>\n', html, '\n</DL>'], { type: 'text/plain' }))

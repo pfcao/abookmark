@@ -1,8 +1,45 @@
-abookmark.dev@outlook.com
-
 tips:
 
 Extentions are forbidden to run inside system pages, other extention pages or chrome/edge store for security.
+
+Click folders/tags with 'alt' to switch between spread view  and normal view. 
+
+# 0.22.0 [2022-09-10]
+
+add:
+
+- [nav] notes in nav page.
+- [nav] link hint (vimium-like): `f`,`f.`. Type white space to confirm if necessary. Escape -> exit.
+- [spread] tag & folder spread view. Alt + click. 
+- [spread] icon as checkbox.
+- [spread] pager.
+- [spread] settings: spread grid maxWidth, minWidth.
+- settings: tag - spread.
+- settings: auto link hint on nav page.
+- settings: app page max width.
+- settings: semi-trash mark for duplicate urls. It will add '~~' at the title & the url.
+- settings: nav trigger - right click on the right edge.
+- context menu: reveal in native manager.
+- search: folder search.
+
+change:
+
+- tags: **Shift + click to remove a tag** from the node.
+- [settings] click: active -> active new tab
+
+remove:
+
+- [settings] Nav/spread click options.
+
+fix:
+
+- undo: delete.
+- context menu boot position.
+
+improve:
+
+- note loading.
+- bing bg updates.
 
 # 0.20.0 [2022-08-20]
 
@@ -10,11 +47,11 @@ add:
 
 - hotkey: undo: Ctrl + z. It works sometimes.
 - hotkey: 'delete' to remove selected nodes.
-- tags: Alt + click to remove the tag from the node.
-- topbar: Ctrl/Shift+click on the icon of a node to multi-select.
-- topbar: option page button on the right corner.
-- spread: Click on the icons to edit.
-- settings: Full date stamp for new floders.
+- tags: ~Alt~ Shift + click to remove the tag from the node.
+- topbar: ~Ctrl/Shift+click on the icon of a node to multi-select.~
+- topbar: ~option page button on the right corner.~
+- spread: ~Click on the icons to edit.~
+- settings: Full date stamp for new folders.
 - settings: Link picking : auto stop.
 - settings: Spread arrow.
 - editor: create folder.
@@ -41,7 +78,7 @@ removed:
 
 deprecated:
 
-The following functions may be removed in next version.
+The following features may be removed in next version:
 
 - Folder left edge context menu: advanced selection commands.
 - Drop nodes into outlined tags (#todo, #!trending...) to tag them.
