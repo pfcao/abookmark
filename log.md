@@ -4,12 +4,37 @@ Extentions are forbidden to run inside system pages, other extention pages or ch
 
 Click folders/tags with 'alt' to switch between spread view  and normal view. 
 
+# 0.23.0 [2022-09-25]
+
+change:
+
+- By default newly created single bookmark will be stored under inbox folder directly (not under its first subfolder).
+
+add:
+
+- [tab] Store tabs by groups as folders
+- [tab] Store current group
+- [tab] Alt + click store buttons = add bookmarks (without close tabs)
+- [tab] Shift + click store buttons = store without creating new folders.
+- [nav] shortcut: open nav page. It always opens in new tab.
+- vi-like keyboard (preview). 
+- keyboard manual: ? (disabled by default)
+
+remove:
+
+- recycle nodes. 
+
+fix:
+
+- The crash caused by removing nodes in search results.
+- Notes in nav.
+
 # 0.22.0 [2022-09-10]
 
 add:
 
 - [nav] notes in nav page.
-- [nav] link hint (vimium-like): `f`,`f.`. Type white space to confirm if necessary. Escape -> exit.
+- [nav] link hint (vimium-like): `f`. Type space to confirm if necessary. Escape -> exit.
 - [spread] tag & folder spread view. Alt + click. 
 - [spread] icon as checkbox.
 - [spread] pager.

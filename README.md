@@ -11,7 +11,7 @@ Abookmark has the key features of onetab for tab management, and it saves tabs a
 - Labels/Tags.
 - Tab managements.
 - Sticky notes in web pages.
-- Trash and Recycle mode.
+- Trash.
 - Advanced search.
 - Link picking.
 - Link sailing.
@@ -52,7 +52,10 @@ All your bookmarks are stored in your browser system. Abookmark does not transfe
 - Remove a tag: Shift + click
 - Save in bookmark editor: Ctrl + enter
 - Spread view (for any tag/folder): Alt + click
-- Link hint: `f`, `f.`
+- Link hint: `f`
+- Alt + click store buttons = add bookmarks (without close tabs)
+- Shift + click store buttons = store without creating new folders.
+- keyboard manual: ? (disabled by default)
 
 ## Concepts
 
@@ -115,14 +118,14 @@ Unlike '#' tags, you can not drop into id tags to toggle the tag. But a id tag (
 When in 'Trash' mode, all deleted nodes will be marked as trash and moved into trash folder. You can restore them by 'Normalize' function.
 
 You should select a trash folder node to enable trash mode. Any folder may be appoited as trash folder, even outside of working folder.
-
+<!-- 
 ### Recycle
 
 'Recycle' engine may reuse these 'trash' nodes when you create new nodes.
 
 'Recycle' is designd to reuse node ids. Generally this is not necessary if you do not know what it is. So it is disabled by default.
 
-Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default.
+Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default. -->
 
 ### toolbar: Fold
 
