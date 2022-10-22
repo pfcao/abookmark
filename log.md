@@ -1,8 +1,46 @@
-tips:
+Extentions are forbidden to run inside system pages, other extention pages or chrome/edge store for security reasons.
 
-Extentions are forbidden to run inside system pages, other extention pages or chrome/edge store for security.
+Click folders with 'alt' to switch between spread view and normal view.
 
-Click folders/tags with 'alt' to switch between spread view  and normal view. 
+As chrome is shutting down the support of manifest v2, we have to migrate to manifest v3 before the end of 2022. Our first manifest v3 release will be v0.30.0, in Dec.. Chrome > v105 is required, and maybe some features need to be modified.
+
+# 0.25.0 [2022-10-20]
+
+add:
+
+- rewritten drag & drop engine. Now you can drop a link into abookmark. It also supports to drag abookmark nodes across windows and drop it anywhere.
+- [nav] integrated manager in nav.
+- [nav] drop a bookmark node on the blank area in nav page to reveal it or to attach to topbar.
+- [nav] topbar pin mode.
+- [nav] nav trigger: +Ctrl to open in new tab.
+<!-- - [nav] context menu: 'Create shortcut in top folder'.  -->
+- [settings] url click options in tree view.
+- [search] search for recently added bookmarks according abookmark date stamp.
+- [search] search results sorted by date.
+- separate date stamp field for title in bookmark editor.
+- date column in tree view.
+- recycle nodes.
+
+fix:
+
+- merge a single folder = unfold it.
+- [nav] right edge trigger.
+- link picking's working folder.
+- more eye-pleasing color scheme in dark theme.
+
+remove:
+
+- drag & drop for tags.
+- tag spread mode.
+- Nav: Boot with link hints.
+- Top folder auto grid view.
+
+deprecated:
+
+The following features may be removed in future versions:
+
+- id tag.
+- auto link sailing.
 
 # 0.23.0 [2022-09-25]
 
@@ -17,12 +55,12 @@ add:
 - [tab] Alt + click store buttons = add bookmarks (without close tabs)
 - [tab] Shift + click store buttons = store without creating new folders.
 - [nav] shortcut: open nav page. It always opens in new tab.
-- vi-like keyboard (preview). 
+- vi-like keyboard (preview).
 - keyboard manual: ? (disabled by default)
 
 remove:
 
-- recycle nodes. 
+- recycle nodes.
 
 fix:
 
@@ -35,7 +73,7 @@ add:
 
 - [nav] notes in nav page.
 - [nav] link hint (vimium-like): `f`. Type space to confirm if necessary. Escape -> exit.
-- [spread] tag & folder spread view. Alt + click. 
+- [spread] tag & folder spread view. Alt + click.
 - [spread] icon as checkbox.
 - [spread] pager.
 - [spread] settings: spread grid maxWidth, minWidth.
@@ -103,7 +141,7 @@ removed:
 
 deprecated:
 
-The following features may be removed in next version:
+The following features may be removed in comming versions:
 
 - Folder left edge context menu: advanced selection commands.
 - Drop nodes into outlined tags (#todo, #!trending...) to tag them.

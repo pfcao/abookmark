@@ -1,8 +1,12 @@
-# Abookmark a bookmark & tab manager
+# Abookmark advanced bookmark & tab manager v0.25
 
 Advanced bookmark manager comes with labels, sticky notes, and trash mode.
 
 Abookmark has the key features of onetab for tab management, and it saves tabs as bookmarks.
+
+<https://chrome.google.com/webstore/detail/abookmark/poeodakgiedndmmkabehagjgpbjkcfgg>
+
+<https://microsoftedge.microsoft.com/addons/detail/abookmark/njffnfkceagiolcjfjdnofoobckaeanb>
 
 [中](README-zh.md)
 
@@ -11,10 +15,10 @@ Abookmark has the key features of onetab for tab management, and it saves tabs a
 - Labels/Tags.
 - Tab managements.
 - Sticky notes in web pages.
-- Trash.
+- Trash/Recycle.
 - Advanced search.
 - Link picking.
-- Link sailing.
+- Link replacing.
 - Tree view.
 - Grid view.
 - Spread view & top bar / nav page.
@@ -22,6 +26,7 @@ Abookmark has the key features of onetab for tab management, and it saves tabs a
 - Export any bookmark folder.
 - Import selected bookmarks from a file.
 - Monthly backup.
+- Recent bookmarks.
 - Cooperate with native bookmark system.
 - Auto sync.
 - Keyboard shortcuts.
@@ -42,6 +47,7 @@ All your bookmarks are stored in your browser system. Abookmark does not transfe
 - Move bookmarks with [merge].
 - Drop nodes into nav buttons ([home], [trash], [top]...).
 - If you want to show the title of a bookmark in top bar you can put a letter '!' in front of its title.
+- Drop a node on blank area to reveal it.
 
 ## Shortcuts
 
@@ -101,7 +107,7 @@ All other symbols are reserved by Abookmark.
 
 '$' tags are reserved for system usage.
 
-### id tag:
+<!-- ### id tag:
 
 format: '@' + 'folder id' + ':' + 'anything'
 eg: @100:books
@@ -109,31 +115,29 @@ eg: @100:books
 The 'id' may be omitted. Then id tag becomes: '@:' + 'node_name'
 eg: @:books
 
-The 'node_name' can be any part of that node's title. When you click a id tag, AsNote will search out all titles matched the 'node_name'.
-
-Unlike '#' tags, you can not drop into id tags to toggle the tag. But a id tag (of inbox folder on the left side bar) is droppable as a shortcut of the corresponding folder node if it matchs only one folder node.
+The 'node_name' can be any part of that node's title. When you click a id tag, AsNote will search out all titles matched the 'node_name'. -->
 
 ### Trash
 
 When in 'Trash' mode, all deleted nodes will be marked as trash and moved into trash folder. You can restore them by 'Normalize' function.
 
 You should select a trash folder node to enable trash mode. Any folder may be appoited as trash folder, even outside of working folder.
-<!-- 
+
 ### Recycle
 
 'Recycle' engine may reuse these 'trash' nodes when you create new nodes.
 
 'Recycle' is designd to reuse node ids. Generally this is not necessary if you do not know what it is. So it is disabled by default.
 
-Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default. -->
+Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default.
 
-### toolbar: Fold
+### Fold
 
 'Fold' creates a new folder besides the last selected node and moves all selected nodes into that folder.
 
 Suppose you want to move several nodes into a folder.
 
-### toolbar: Merge
+### Merge
 
 'Merge' unfolds all other selected folders(if they are folders) and moves them into(or beside) the last selected node.
 
@@ -145,7 +149,7 @@ Suppose you are viewing a page contains many links. You want to mark some of the
 
 After switched to Picking mode, any links clicked with 'Ctrl' (by default) in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
 
-### link sailing
+<!-- ### link sailing
 
 Generally a bookmark is a note of a 'static' url. But sometimes this is not the best choice. For example, I am surfing from bookmark of site/page1, then I go to site/page2, site/page3... Now I want my bookmark to point to site/page3. Abookmark can do this automatically. This is the 'link sailing'.
 
@@ -164,7 +168,7 @@ How to exit 'link sailing'?
 
 - Go to another site.
 - Close that tab.
-- Trigger 'toggle sail mode' command in that web page.
+- Trigger 'toggle sail mode' command in that web page. -->
 
 ### filter:
 
@@ -206,7 +210,7 @@ All nodes are treated as new bookmarks if you are in the 'Create' mode.
 
 ## FAQ
 
-### Why do Abookmark need permission of "Site access On all sites"?
+### Why does Abookmark need permission of "Site access On all sites"?
 
 This is necessary only if you want to show sticky notes in web pages automatically (and to load the top bar trigger since v0.8). This does not affect any other features.
 
@@ -227,7 +231,7 @@ Yes.
 
 You can import onetab's export data into bookmarks directly. But that data has no folder or date information. We write a little exporter to parse and download the full data as bookmarks:
 
-<https://raw.githubusercontent.com/pfcao/asnote/main/onetab-to-bookmarks.js>
+[onetab-to-bookmarks.js](onetab-to-bookmarks.js)
 
 ### What's the benefits if I switch from onetab?
 
@@ -242,7 +246,7 @@ You can import onetab's export data into bookmarks directly. But that data has n
 
 No.
 
-Abookmark do not inject anything into any web page unless it has notes to show or you evoke it explicitly (by shortcuts or button clicks).
+Abookmark does not inject anything into any web page unless it has notes to show or you evoke it explicitly (by shortcuts or button clicks).
 
 Since v0.8, there is an option (inactive by default) to load a top bar trigger into web pages. This trigger is no more than a button.
 

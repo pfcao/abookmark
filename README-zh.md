@@ -1,17 +1,17 @@
-# Abookmark 书签及标签页管理插件 v0.23.0
+# Abookmark 书签及标签页管理插件 v0.25.0
 
-Abookmark 是一款专业书签及标签页管理插件, 与 chrome/edge 原生书签完全兼容, 并在其基础上增加了一些有趣的功能:
+Abookmark 是一款高级书签及标签页管理插件, 与 chrome/edge 原生书签完全兼容, 并在其基础上增加了一些功能:
 
 - tab 管理. 具有类似于 onetab 的功能. 您可以把当前打开的所有或部分网址保存起来, 在需要的时候重新打开. 所保存的网页与书签系统无缝衔接, 可以在多浏览器间同步.
 - 标签.
 - 便签. 您可以在常见网页上添加便利贴, 当您再次浏览该网页的时候可以看到这些便利贴.
 - 回收站. 启用此功能后, 您删除的书签会转移到回收站, 这些书签可以恢复.
-- 采集模式. 开启后, 您在当前网页上 ctrl+点击的链接(也即在新标签页中打开的链接)会直接保存为书签.
-- 航行模式. 书签网址会随着浏览网页而移动.
+- 链接采集模式. 开启后, 您在当前网页上 ctrl+点击的链接(也即在新标签页中打开的链接)会直接保存为书签.
 - 更新到当前网址 - 手动版航行模式.
 - 导出指定文件夹下的书签.
 - 临时加载/预览导出的书签.
 - 定时备份书签.
+- 搜索最近添加的书签.
 - 多列单屏展示
 - 文本编辑器.
 - 书签栏与导航页. 书签栏相当于 chrome 的书签栏 + 多列单屏展示, 尤其适合书签较多的用户. 书签栏提供 Abookmark 的核心功能.
@@ -28,6 +28,7 @@ Abookmark 是一款专业书签及标签页管理插件, 与 chrome/edge 原生�
 - 将回收站的节点拉到其它文件夹使其恢复正常.
 - 用 [合并] 移动节点.
 - 导航栏用 "!" 开头强制显示标题.
+- 导航页中拖拽到空白区域来做为子书签栏打开或在管理器中打开.
 
 ## Shortcuts
 
@@ -66,11 +67,12 @@ Abookmark 是一款专业书签及标签页管理插件, 与 chrome/edge 原生�
 
 在 onetab 中所保存的所谓的标签页不过是 Abookmark 中的一个普通书签.
 
-收存: 缺省情况下, Abookmark 将指定标签页 "收存" 于 收件箱文件夹 下的子文件夹 并关闭标签. 收存一个以上的标签页时会创建新文件夹.
+收存: 缺省情况下, Abookmark 将指定标签页 "收存" 于 收件箱文件夹并关闭标签. 同时收存多个标签页时会创建子文件夹.
 
 恢复: 点击恢复按钮或者网址时 Abookmark 会打开对应网址并移除书签.
 
 与 onetab 相比, Abookmark 可以轻松浏览上万节点, 这些数据由原生书签系统保存并同步.
+
 ### labels/tags
 
 标签应该以 '#' 开始, 并不要包含 '-' 或 '\_' 之外的任何符号. 虽然 Abookmark 对此并不强制.
@@ -83,25 +85,35 @@ Abookmark 申明保留所有其它符号.
 
 '$' tags are reserved for system usage.
 
+<!-- ### id tag:
+
+format: '@' + 'folder id' + ':' + 'anything'
+eg: @100:books
+
+The 'id' may be omitted. Then id tag becomes: '@:' + 'node_name'
+eg: @:books
+
+The 'node_name' can be any part of that node's title. When you click a id tag, AsNote will search out all titles matched the 'node_name'. -->
+
 ### Trash
 
 指定垃圾箱文件夹后, 普通节点被删除时会移入垃圾箱, 并标记为垃圾. 将节点拖拽出垃圾箱可使其恢复正常.
 
 删除有垃圾标记的节点会使其彻底删除.
 
-<!-- ### Recycle
+### Recycle
 
-启用回收功能后, 会使用垃圾节点来创建新节点.
+'Recycle' engine may reuse these 'trash' nodes when you create new nodes.
 
-回收功能是为防止id快速增长,  通常这是没有必要的, 因此默认并不开启回收功能. 
+'Recycle' is designd to reuse node ids. Generally this is not necessary if you do not know what it is. So it is disabled by default.
 
-100以内的垃圾节点并不会被收回. -->
+Trash folder reserves at least 50 (100 after v0.6) nodes from recycling by default.
 
-### toolbar: Fold
+### Fold
 
 "打包" 会将所选节点包裹到一新建文件夹.
 
-### toolbar: Merge
+### Merge
 
 '归并' 会将所有其它所选节点 '拆包', 并移入最末所选节点.
 
@@ -111,7 +123,7 @@ Abookmark 申明保留所有其它符号.
 
 开启链接采集模式后, 新开启的标签页(通常用Ctrl)会被自动收存. 默认情况下, 切换到其它标签页会退出采集模式.
 
-### link sailing
+<!-- ### link sailing
 
 Generally a bookmark is a note of a 'static' url. But sometimes this is not the best choice. For example, I am surfing from bookmark of site/page1, then I go to site/page2, site/page3... Now I want my bookmark to point to site/page3. Abookmark can do this automatically. This is the 'link sailing'.
 
@@ -130,19 +142,7 @@ How to exit 'link sailing'?
 
 - Go to another site.
 - Close that tab.
-- Trigger 'toggle sail mode' command in that web page.
-
-### id tag:
-
-format: '@' + 'folder id' + ':' + 'anything'
-eg: @100:books
-
-The 'id' may be omitted. Then id tag becomes: '@:' + 'node_name'
-eg: @:books
-
-The 'node_name' can be any part of that node's title. When you click a id tag, AsNote will search out all titles matched the 'node_name'.
-
-Unlike '#' tags, you can not drop into id tags to toggle the tag. But a id tag (of inbox folder on the left side bar) is droppable as a shortcut of the corresponding folder node if it matchs only one folder node.
+- Trigger 'toggle sail mode' command in that web page. -->
 
 ### top bar:
 
@@ -199,7 +199,7 @@ ab 另提供指定文件夹的导出及浏览. 浏览时可以通过拖拽将选
 
 onetab 自身可以导出数据供原生书签导入, 但这一数据仅是所有网址的列表, 并不带有分组及日期信息. 我们写了一个简单的脚本, 可以导出更多的有用信息. 
 
-<https://raw.githubusercontent.com/pfcao/asnote/main/onetab-to-bookmarks.js>
+[onetab-to-bookmarks.js](onetab-to-bookmarks.js)
 
 ### 比 onetab 有什么优势?
 
