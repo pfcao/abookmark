@@ -2,7 +2,31 @@ Extentions are forbidden to run inside system pages, other extention pages or ch
 
 Click folders with 'alt' to switch between spread view and normal view.
 
-As chrome is shutting down the support of manifest v2, we have to migrate to manifest v3 before the end of 2022. Our first manifest v3 release will be v0.30.0, in Dec.. Chrome > v105 is required, and maybe some features need to be modified.
+As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Our first manifest v3 release will be v0.30.0, and Chrome > v105 is required then.
+
+<!-- 
+# 0.30.0
+
+unsupported:
+
+- bookmarket -->
+<!-- - [nav] context menu: 'Create shortcut in top folder'. -->
+
+# 0.26.0 [2022-11-10]
+
+add:
+
+- [nav] tile mode - bigger icons & seperated bookmarks and folders.
+- [popup] nav view.
+- context menu: set top folder id.
+- context menu: cut & paste
+- {app path}/mini.html (for vivaldi side panel, etc).
+- basic touch support.
+
+fix:
+
+- [nav] context menu: path: click to reveal.
+- note width.
 
 # 0.25.0 [2022-10-20]
 
@@ -13,7 +37,6 @@ add:
 - [nav] drop a bookmark node on the blank area in nav page to reveal it or to attach to topbar.
 - [nav] topbar pin mode.
 - [nav] nav trigger: +Ctrl to open in new tab.
-<!-- - [nav] context menu: 'Create shortcut in top folder'.  -->
 - [settings] url click options in tree view.
 - [search] search for recently added bookmarks according abookmark date stamp.
 - [search] search results sorted by date.

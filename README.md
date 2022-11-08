@@ -1,4 +1,4 @@
-# Abookmark advanced bookmark & tab manager v0.25
+# Abookmark advanced bookmark & tab manager v0.26
 
 Advanced bookmark manager comes with labels, sticky notes, and trash mode.
 
@@ -7,8 +7,6 @@ Abookmark has the key features of onetab for tab management, and it saves tabs a
 <https://chrome.google.com/webstore/detail/abookmark/poeodakgiedndmmkabehagjgpbjkcfgg>
 
 <https://microsoftedge.microsoft.com/addons/detail/abookmark/njffnfkceagiolcjfjdnofoobckaeanb>
-
-[中](README-zh.md)
 
 ## Features
 
