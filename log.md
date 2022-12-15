@@ -12,6 +12,59 @@ unsupported:
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
 
+# 0.27.0 [2022-12-15]
+
+add:
+
+- context menu: set home folder id.
+- search in a folder.
+- tab nodes.
+- folder sailing.
+- lazy loader.
+
+This edition may be buggy, for we have rewritten the data engine for further develpments. The new features are added for preview. They are supposed to be improved gradually. 
+
+Currently the "sticky notes" are not supported in folder sailing. 
+
+### Reveal button.
+
+Though it has been there for a long time, we have never given the reveal button a document. Just like the Esc key, the effect of the reveal button depends on it's running environment:
+
+1. If there is one bookmark selected, it will search for related nodes of that bookmark.
+2. If it is loaded in another web page or in popup mode: it will reveal the corresponding bookmark of the tab url (if the page is saved before) or search for related nodes of that url.
+3. If it is in sail mode, it will reveal the sailing folder.
+4. If it is in the app page and there is nothing else to reveal, it will reveal the current folder. In this case, it is equal to go to the upper level.
+
+### What is tab nodes?
+
+Tab nodes are tabs shown as virtual bookmarks. They are a bridge between bookmarks and tabs.
+
+### What is folder sailing?
+
+For simplicity, think of a sailing folder as the tab bar of the sailing window. Nodes under the sailing folder act as tab nodes temporarily.
+
+When it is booted:
+
+- a sailing window is formed, with a pinned abookmark page as its sailing engine.
+- bookmarks under the sailing folder are loaded as tabs in the sailing window. (sub-folders are not loaded in this edition)
+- everything happens in the sailing window may change the sailing folder:
+	- add a tab = create a bookmark
+	- close a tab = remove the bookmark
+	- update a tab = update the bookmark
+	- ...
+- everything happens in the sailing folder by the sailing engine may affect the sailing window.
+- close the tab of sailing engine = stop sailing
+- It will fallback to a normal tab if there is some other tab before the sailing engine in the sailing window.
+
+notice:
+
+- Sailing is dangerous. make a backup first, start from a temporary folder as your sandbox.
+- It is not warranted to use other tab managers in the sailing window.
+- Do not modify the sailing folder outside of its sailing engine.
+- The sticky notes are not supported in folder sailing.
+
+Folder sailing is a superset of link sailing. The auto mode of link sailing has been removed for simplicity. It is suggested to use the "~" (sail to current tab) in context menu to update the node by current tab URL.
+
 # 0.26.0 [2022-11-10]
 
 add:

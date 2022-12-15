@@ -147,7 +147,7 @@ Suppose you are viewing a page contains many links. You want to mark some of the
 
 After switched to Picking mode, any links clicked with 'Ctrl' (by default) in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
 
-<!-- ### link sailing
+### link sailing
 
 Generally a bookmark is a note of a 'static' url. But sometimes this is not the best choice. For example, I am surfing from bookmark of site/page1, then I go to site/page2, site/page3... Now I want my bookmark to point to site/page3. Abookmark can do this automatically. This is the 'link sailing'.
 
@@ -155,18 +155,40 @@ When in sailing mode, Abookmark will always update the bookmark to the latest pa
 
 When a tab is in link sailing mode, there will be a 'S' shown in the extention icon badge.
 
-How to trigger 'link sailing'?
+<!-- How to trigger 'link sailing'? -->
 
-- Click a bookmark in Abookmark tagged with #!sailing.
+<!-- - Click a bookmark in Abookmark tagged with #!sailing.
 - Click a bookmark in Abookmark whose parent folder tagged with #!sailing.
 - Click a bookmark in Abookmark with alt/shift according to your settings.
-- Trigger 'toggle sail mode' command in any web page bookmarked.
+- Trigger 'toggle sail mode' command in any web page bookmarked. -->
 
 How to exit 'link sailing'?
 
 - Go to another site.
 - Close that tab.
-- Trigger 'toggle sail mode' command in that web page. -->
+<!-- - Trigger 'toggle sail mode' command in that web page. -->
+
+### folder sailing
+
+Folder sailing is another mode of sailing. When it is booted:
+
+- a sailing window is formed, with a pinned abookmark page as its sailing engine.
+- bookmarks under the sailing folder are loaded as tabs in the sailing window.
+- everything happens in the sailing window may change the sailing folder:
+	add a tab = create a bookmark
+	close a tab = remove the bookmark
+	update a tab = update the bookmark
+	...
+- everything happens in the sailing folder by the sailing engine may affect the sailing window.
+- close the tab of sailing engine = stop sailing
+
+warning:
+
+- sailing is dangerous. make a backup first, start from a temporary folder as your sandbox.
+- it is not warranted to use other tab managers in the sailing window.
+- do not modify the sailing folder outside of its sailing engine.
+
+### window sailing
 
 ### filter:
 
