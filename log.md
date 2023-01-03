@@ -12,6 +12,24 @@ unsupported:
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
 
+# 0.28.0 [2023-01-05]
+
+add:
+
+- window sailing.
+- folder sailing with folder support.
+- sailing: tab cache.
+- keyboard: go to first tab.
+- keyboard: sail.refresh. sail.fold. sail.upward (go to upper level). 
+- temporary node order.
+- buffer nodes (preview).
+
+Buffer nodes are nodes stored in local storage. They are similar to bookmarks but are not counted as bookmarks. You can active it in settings-lab.
+
+Window sailing is similar to folder sailing. The key difference is that window sailing uses the bookmark root node as its root folder, and it keeps the cached tabs in a limited amount. As the contract, folder sailing deletes unmatched tabs at the start, but it keeps all the tabs as cache afterwards.
+
+Sailing is powerful. It is good at exploring. But it also can be used as your "tree style tab". It is a vertical tab bar. It is a workspace manager. It is a task manager. It depends on how you use it.
+
 # 0.27.0 [2022-12-15]
 
 add:
@@ -23,8 +41,6 @@ add:
 - lazy loader.
 
 This edition may be buggy, for we have rewritten the data engine for further develpments. The new features are added for preview. They are supposed to be improved gradually. 
-
-Currently the "sticky notes" are not supported in folder sailing. 
 
 ### Reveal button.
 
@@ -61,7 +77,6 @@ notice:
 - Sailing is dangerous. make a backup first, start from a temporary folder as your sandbox.
 - It is not warranted to use other tab managers in the sailing window.
 - Do not modify the sailing folder outside of its sailing engine.
-- The sticky notes are not supported in folder sailing.
 
 Folder sailing is a superset of link sailing. The auto mode of link sailing has been removed for simplicity. It is suggested to use the "~" (sail to current tab) in context menu to update the node by current tab URL.
 

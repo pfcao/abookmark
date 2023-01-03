@@ -1,8 +1,10 @@
-# Abookmark advanced bookmark & tab manager v0.26
+# Abookmark advanced bookmark & tab manager v0.28
 
 Advanced bookmark manager comes with labels, sticky notes, and trash mode.
 
 Abookmark has the key features of onetab for tab management, and it saves tabs as bookmarks.
+
+With the help of "folder sailing", Abookmark can be used as the chromium based "tree style tab".
 
 <https://chrome.google.com/webstore/detail/abookmark/poeodakgiedndmmkabehagjgpbjkcfgg>
 
@@ -17,6 +19,7 @@ Abookmark has the key features of onetab for tab management, and it saves tabs a
 - Advanced search.
 - Link picking.
 - Link replacing.
+- Folder sailing.
 - Tree view.
 - Grid view.
 - Spread view & top bar / nav page.
@@ -189,6 +192,8 @@ warning:
 - do not modify the sailing folder outside of its sailing engine.
 
 ### window sailing
+
+Window sailing is similar to folder sailing. The key difference is that window sailing uses the bookmark root node as its root folder, and it keeps the cached tabs in a limited amount. As the contract, folder sailing deletes unmatched tabs at the start, but it keeps all the tabs as cache afterwards.
 
 ### filter:
 
