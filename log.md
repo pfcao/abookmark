@@ -2,7 +2,7 @@ Extentions are forbidden to run inside system pages, other extention pages or ch
 
 Click folders with 'alt' to switch between spread view and normal view.
 
-As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Our first manifest v3 release will be v0.30.0, and Chrome > v105 is required then.
+As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Chrome > v105 is required then.
 
 <!-- 
 # 0.30.0
@@ -11,6 +11,40 @@ unsupported:
 
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
+
+<!-- # 0.29.0
+
+- url-folder: folder with url.
+- drop on a bookmark to change it into a url-folder.
+- settings: url-folder.
+- sailing: url-folder support.
+- context menu: url-folder. -->
+
+# 0.29.0 [2023-04-10]
+
+add:
+
+- url tag: tags start with 'http(s)://'. eg: https://google.com. Clicking on a url tag is equal as clicking on a bookmark. 
+- context menu: fold with url tag.
+- settings: sailing: fold with url tag.
+- settings: lab: note: Do not load notes without meta data. This option gives you a choice to add a simple note to a bookmark but do not let it to be loaded as sticky note in its web page. 
+
+fix:
+
+- drag & drop support for address bar url. You can drag a url from address bar and drop it into a folder.
+- buffer nodes: remove folders recursively.
+
+# 0.28.5
+
+- context menu: search in a folder.
+- new sticky note framework.
+
+# 0.28.4
+
+- sailing: auto fix order.
+- sailing: create window sailing.
+- tag list.
+- fix folder.html.click
 
 # 0.28.0 [2023-01-05]
 

@@ -1,8 +1,8 @@
 # Abookmark advanced bookmark & tab manager v0.28
 
-Advanced bookmark manager comes with labels, sticky notes, and trash mode.
+Abookmark uses the native bookmarks as its database and it has some advanced features as labels, sticky notes, and trash mode...
 
-Abookmark has the key features of onetab for tab management, and it saves tabs as bookmarks.
+Abookmark can store and restore tabs as onetab, and it saves tabs as bookmarks.
 
 With the help of "folder sailing", Abookmark can be used as the chromium based "tree style tab".
 
