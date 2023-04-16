@@ -20,6 +20,13 @@ unsupported:
 - sailing: url-folder support.
 - context menu: url-folder. -->
 
+# 0.29.1
+
+add:
+
+- sail: sail from a url bookmark.
+- settings: sail: clear the cache when exit sailing.
+
 # 0.29.0 [2023-04-10]
 
 add:
