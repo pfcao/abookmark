@@ -1,14 +1,18 @@
-# Abookmark advanced bookmark & tab manager v0.28
+# Abookmark advanced bookmark & tab manager
 
 Abookmark uses the native bookmarks as its database and it has some advanced features as labels, sticky notes, and trash mode...
 
 Abookmark can store and restore tabs as onetab, and it saves tabs as bookmarks.
 
-With the help of "folder sailing", Abookmark can be used as the chromium based "tree style tab".
+With the help of "sailing", Abookmark can be used as the chromium based "tree style tab".
 
 <https://chrome.google.com/webstore/detail/abookmark/poeodakgiedndmmkabehagjgpbjkcfgg>
 
 <https://microsoftedge.microsoft.com/addons/detail/abookmark/njffnfkceagiolcjfjdnofoobckaeanb>
+
+<https://addons.mozilla.org/firefox/addon/abookmark/>
+
+If abookmark doesn't work for you, there are some related extensions, such as onetab, taby, workona, braintool, tabs outliner, tree style tab (firefox), sidebery (firefox), bookmark sidebar, card bookmarks, finder bookmarks.
 
 ## Features
 
@@ -19,7 +23,7 @@ With the help of "folder sailing", Abookmark can be used as the chromium based "
 - Advanced search.
 - Link picking.
 - Link replacing.
-- Folder sailing.
+- Sailing.
 - Tree view.
 - Grid view.
 - Spread view & top bar / nav page.
@@ -146,17 +150,17 @@ Suppose you want to move several nodes into a folder.
 
 ### link picking
 
-Suppose you are viewing a page contains many links. You want to mark some of the links and read them another day. This is what we called "link picking".
+Suppose you are viewing a page contains many links. You want to bookmark some of the links and read them another day. This pattern is what we called "link picking".
 
 After switched to Picking mode, any links clicked with 'Ctrl' (by default) in that page will be bookmarked and the openning of new tabs will be terminated. You can click any other tab to exit Picking mode.
 
 ### link sailing
 
-Generally a bookmark is a note of a 'static' url. But sometimes this is not the best choice. For example, I am surfing from bookmark of site/page1, then I go to site/page2, site/page3... Now I want my bookmark to point to site/page3. Abookmark can do this automatically. This is the 'link sailing'.
+Generally a bookmark is a note of a 'static' url. But sometimes this is not enough. For example, you are surfing from bookmark of site/page1, then you go to site/page2, site/page3... Now you want the bookmark to point to site/page3. Abookmark can do this automatically. This is the 'link sailing'.
 
 When in sailing mode, Abookmark will always update the bookmark to the latest page of that site you are surfing. That page will inherit the former notes and tags.
 
-When a tab is in link sailing mode, there will be a 'S' shown in the extention icon badge.
+<!-- When a tab is in link sailing mode, there will be a 'S' shown in the extention icon badge. -->
 
 <!-- How to trigger 'link sailing'? -->
 
@@ -165,15 +169,19 @@ When a tab is in link sailing mode, there will be a 'S' shown in the extention i
 - Click a bookmark in Abookmark with alt/shift according to your settings.
 - Trigger 'toggle sail mode' command in any web page bookmarked. -->
 
-How to exit 'link sailing'?
+<!-- How to exit 'link sailing'?
 
 - Go to another site.
-- Close that tab.
+- Close that tab. -->
 <!-- - Trigger 'toggle sail mode' command in that web page. -->
+
+After v0.29, link sailing is integrated into folder/window sailing.
 
 ### folder sailing
 
-Folder sailing is another mode of sailing. When it is booted:
+Folder sailing is a two way binding between bookmarks of the selected folder and the tab bar.
+
+When it is booted:
 
 - a sailing window is formed, with a pinned abookmark page as its sailing engine.
 - bookmarks under the sailing folder are loaded as tabs in the sailing window.
@@ -185,9 +193,13 @@ Folder sailing is another mode of sailing. When it is booted:
 - everything happens in the sailing folder by the sailing engine may affect the sailing window.
 - close the tab of sailing engine = stop sailing
 
+You can setup how many tabs be loaded in one time by the "Max tabs per window" option. Then you can use sail.refresh shortcut to load tabs in corresponding range with current tab as the first one.
+
+There are some other shortcuts for sailing.
+
 warning:
 
-- sailing is dangerous. make a backup first, start from a temporary folder as your sandbox.
+- sailing is dangerous. make a backup first, start from a temporary folder to try it.
 - it is not warranted to use other tab managers in the sailing window.
 - do not modify the sailing folder outside of its sailing engine.
 
@@ -195,7 +207,11 @@ warning:
 
 Window sailing is similar to folder sailing. The key difference is that window sailing uses the bookmark root node as its root folder, and it keeps the cached tabs in a limited amount. As the contract, folder sailing deletes unmatched tabs at the start, but it keeps all the tabs as cache afterwards.
 
-### filter:
+### sailing on nodes
+
+You can select a list of continues nodes as targets to boot the sailing. A temporary window sailing will be booted for them in this case, which will turn to normal window sailing if you click on other bookmarks in the sailing engine.
+
+### filter
 
 The 'filter' only effects the first level nodes in main panel. It does not change the database, but only rearranges the view dynamicaly.
 
@@ -203,7 +219,7 @@ You can use filter to do something as 'search in current folder'.
 
 You can use 'regular expression' in the filter, just as in the 'search'.
 
-### top bar:
+### top bar
 
 Top bar is similar to chrome/edge's bookmark bar, but it is more 'spreaded'.
 
@@ -211,7 +227,7 @@ You can load the top bar by its keyboard shortcut. If the top bar 'trigger' is a
 
 A 'typical web page' is a normal 'http/https' web page.
 
-### spread view:
+### spread view
 
 Spread view is the backend of top bar menu, and it works in app page as well. It supports basic dragging / dropping.
 
@@ -221,11 +237,11 @@ Since v0.21, a icon is a checkbox at the same time. You can use Shift to select 
 
 Alt + Click the icons in spread menu to reveal the corresponding node.
 
-### search:
+### search
 
 The search box supports javascript regular expressions (regex). We add some keywords for search, and they can be generated by search panel.
 
-### data editor:
+### data editor
 
 With data editor you can edit the data of bookmarks directly in JSON formate. You can use your favorite text editor for further editing.
 

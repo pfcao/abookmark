@@ -1,4 +1,4 @@
-# Abookmark 书签及标签页管理插件 v0.25.0
+# Abookmark 专业书签及标签页管理插件
 
 Abookmark 是一款高级书签及标签页管理插件, 与 chrome/edge 原生书签完全兼容, 并在其基础上增加了一些功能:
 

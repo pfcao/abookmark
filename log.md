@@ -20,6 +20,19 @@ unsupported:
 - sailing: url-folder support.
 - context menu: url-folder. -->
 
+# 0.29.3
+
+add:
+
+- sail: sail from selected continuous bookmarks.
+
+# 0.29.2
+
+add:
+
+- basic firefox support.
+- settings: favicon provider.
+
 # 0.29.1
 
 add:
