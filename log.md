@@ -20,6 +20,20 @@ unsupported:
 - sailing: url-folder support.
 - context menu: url-folder. -->
 
+# 0.29.4
+
+add: 
+
+- import from the json file exported by 'Session Buddy'.
+- shortcuts: sail.exit
+- settings: sail: close the tabs when exit sailing.
+- vi keyboard: sail (G).
+
+fix:
+
+- restore subfolders recursively.
+- sail: reload notes after the tab updated.
+
 # 0.29.3
 
 add:
@@ -38,7 +52,7 @@ add:
 add:
 
 - sail: sail from a url bookmark.
-- settings: sail: clear the cache when exit sailing.
+- settings: sail: close the cache when exit sailing.
 
 # 0.29.0 [2023-04-10]
 

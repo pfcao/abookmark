@@ -186,10 +186,10 @@ When it is booted:
 - a sailing window is formed, with a pinned abookmark page as its sailing engine.
 - bookmarks under the sailing folder are loaded as tabs in the sailing window.
 - everything happens in the sailing window may change the sailing folder:
-	add a tab = create a bookmark
-	close a tab = remove the bookmark
-	update a tab = update the bookmark
-	...
+  add a tab = create a bookmark
+  close a tab = remove the bookmark
+  update a tab = update the bookmark
+  ...
 - everything happens in the sailing folder by the sailing engine may affect the sailing window.
 - close the tab of sailing engine = stop sailing
 
@@ -266,6 +266,10 @@ Since bookmark importing can not restore the 'create date', we suggest you keep 
 Abookmark is just bookmarks.
 You can use the native bookmark manager to import/export all the data.
 
+### May I transfer my data from Session Buddy?
+
+Yes. Just export your data from Session Buddy in json format, then load the json file from abookmark main menu. You can browse the loaded file nodes then select what you need and drag them into a real bookmark folder.
+
 ### May I transfer my data from onetab?
 
 Yes.
@@ -296,5 +300,7 @@ Some other in page bookmark extention will load the bookmarks into every page be
 ## Buy me a coffee.
 
 paypal: <https://paypal.me/pfcao>
+
+## Email
 
 abookmark.dev@outlook.com
