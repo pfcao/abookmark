@@ -1,5 +1,5 @@
 // download onetab data as bookmarks
-// by: Abookmark AsNote, pfcao
+// by: Abookmark, pfcao
 // 1. open the onetab display page in your browser.
 // 2. open the 'developer tools' panel of your browser. (Ctrl+Shif+i)
 // 3. click 'console' tab of the 'developer tools'.
@@ -28,7 +28,7 @@ chrome.storage.local.get('state', storage => {
 				.reverse()
 				.reduce(
 					(pre, mt) =>
-						pre + `<DT><A HREF="${mt.url}" ADD_DATE="${date}">${mt.title}</A>\n`,
+						pre + `<DT><A HREF="${mt.url}" ADD_DATE="${date}">${mt.title?.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</A>\n`,
 					'',
 				)
 			return `<DT><H3 ADD_DATE="${date}">${group.starred || group.locked ? '* ' : ''}[${

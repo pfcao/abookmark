@@ -41,6 +41,10 @@ If abookmark doesn't work for you, there are some related extensions, such as on
 
 All your bookmarks are stored in your browser system. Abookmark does not transfer any of your data to anywhere else.
 
+## Contact
+
+abookmark.dev@outlook.com
+
 ## Tips
 
 - Unselect all nodes by 'Escape'.
@@ -64,9 +68,12 @@ All your bookmarks are stored in your browser system. Abookmark does not transfe
 - Save in bookmark editor: Ctrl + enter
 - Spread view (for any tag/folder): Alt + click
 - Link hint: `f`
-- Alt + click store buttons = add bookmarks (without close tabs)
-- Shift + click store buttons = store without creating new folders.
 - keyboard manual: ? (disabled by default)
+- Alt + store buttons = add bookmarks (without close tabs)
+- Shift + store buttons = store without creating new folders.
+- Alt + open button = close other tabs & open
+- Alt + restore button = close other tabs & restore
+- Alt + update button (~) = update & close saved tabs. 
 
 ## Concepts
 
@@ -211,6 +218,12 @@ Window sailing is similar to folder sailing. The key difference is that window s
 
 You can select a list of continues nodes as targets to boot the sailing. A temporary window sailing will be booted for them in this case, which will turn to normal window sailing if you click on other bookmarks in the sailing engine.
 
+### context menu: update ~
+
+Update (~) button updates a bookmark by current tab. The tags and notes may be preserved. 
+
+It can also update a folder with the tabs of current window. The folder will have bookmarks corresponding to the tabs but subfolders will be ignored. It also ignores pinned tabs and groups. 
+
 ### filter
 
 The 'filter' only effects the first level nodes in main panel. It does not change the database, but only rearranges the view dynamicaly.
@@ -248,6 +261,10 @@ With data editor you can edit the data of bookmarks directly in JSON formate. Yo
 In the 'Edit' mode, a node is updated by its id if the corresponding bookmark can be found. Nodes without 'id' field are treated as new bookmarks. A node with '-id' field instead of 'id' field will be removed.
 
 All nodes are treated as new bookmarks if you are in the 'Create' mode.
+
+### snapshot
+
+A snapshot is a copy of all the bookmarks, but you can also copy what you selected. It is another version of export. But they are stored in the browser natively and it keeps 12 snapshots. You can load and view them as file nodes. You can drag to copy the nodes selected.
 
 ## FAQ
 

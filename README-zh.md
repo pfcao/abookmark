@@ -20,6 +20,8 @@ Abookmark 是一款高级书签及标签页管理插件, 与 chrome/edge 原生�
 
 所有数据均保存于本地. Abookmark 不会向别处传输任何用户数据.
 
+abookmark.dev@outlook.com
+
 ## Tips
 
 - 'Escape': 清空选择.
@@ -39,9 +41,13 @@ Abookmark 是一款高级书签及标签页管理插件, 与 chrome/edge 原生�
 - 删除标签: Shift + click
 - 编辑界面保存: Ctrl + enter
 - Spread view (for any tag/folder): Alt + click
-- Alt + click store buttons = add bookmarks (without close tabs)
-- Shift + click store buttons = store without creating new folders.
-- keyboard manual: ? (disabled by default)
+- Link hint: `f`
+- 快捷键盘手册: ? (disabled by default)
+- Alt + store buttons = 收存但不关闭标签页
+- Shift + store buttons = 收存但不新建文件夹
+- Alt + open button = 打开节点并关闭其它标签页
+- Alt + restore button = 恢复节点并关闭其它标签页
+- Alt + update button (~) = 更新节点并关闭(已保存的)标签页. 
 
 ## 概念
 
@@ -161,6 +167,14 @@ Topbar 相当于书签栏, 但它也是自成一页的, 称为导航页.
 
 扩展视图是 topbar 的主视图, 同时在书签管理器中也可以触发. 所有文件夹或标签都可以用扩展视图展示. 通过 Alt 键来选择 是否触发扩展视图.
 
+### context menu: update ~
+
+更新按钮(~)用于把一个书签更新为当前标签页的网址, 并保留其原有标签及便签. 
+
+它也可以用于文件夹. 整个文件夹会被替换为当前窗口打开的标签页. 
+
+更新可以看为是手动模式的航行, 但两者的结果有细微区别. 更新会保留所有的子文件夹, 并忽略固定了的标签页. 更新不能保存文件夹加载页(~/folder.html). 
+
 ### filter:
 
 'filter' 并不改变数据本身, 而是在运行时改变节点的显示.
@@ -180,6 +194,12 @@ With text editor you can edit the data of bookmarks directly in JSON formate. Yo
 In the 'Edit' mode, a node is updated by its id if the corresponding bookmark can be found. Nodes without 'id' field are treated as new bookmarks. A node with '-id' field instead of 'id' field will be removed.
 
 All nodes are treated as new bookmarks if you are in the 'Create' mode.
+
+### snapshot 快照
+
+快照是对全部书签的备份, 但也可以选择部分书签创建快照. 
+
+快照与导出类似, 但快照保存在浏览器内部, 可以保存12份快照. 它们可以加载为文件节点, 可以通过拖拽进行复制.
 
 ## FAQ
 

@@ -2,9 +2,9 @@ Extentions are forbidden to run inside system pages, other extention pages or ch
 
 Click folders with 'alt' to switch between spread view and normal view.
 
-As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Chrome > v105 is required then.
+As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Chrome > v105 is required then. (Since google postponed the process, we will revise the schedule.)
 
-<!-- 
+<!--
 # 0.30.0
 
 unsupported:
@@ -20,9 +20,28 @@ unsupported:
 - sailing: url-folder support.
 - context menu: url-folder. -->
 
+# 0.31.0
+
+add:
+
+- main menu: snapshots. A snapshot is a copy of all the bookmarks, but you can also copy what you selected. It is another version of export. They are stored in the browser natively and it keeps 12 snapshots. You can load and view them as file nodes. You can drag to copy the nodes selected.
+- context menu: Update (~) button updates a bookmark by current tab. The tags and notes may be preserved. Now it can also update a folder with the tabs of current window. The folder will have bookmarks corresponding to the tabs but subfolders will be ignored. It also ignores pinned tabs and groups.  
+- context menu: Alt + update (~) = update & close saved tabs.
+- context menu: open + alt = close other tabs & open
+- context menu: restore + alt = close other tabs & restore
+
+remove:
+
+- sail: Add "from title" tag to incoming nodes
+- sail: Add "from link" tag to incoming nodes
+
+fix:
+
+- undo: remove: recover the marks.
+
 # 0.29.4
 
-add: 
+add:
 
 - import from the json file exported by 'Session Buddy'.
 - shortcuts: sail.exit
@@ -58,10 +77,10 @@ add:
 
 add:
 
-- url tag: tags start with 'http(s)://'. eg: https://google.com. Clicking on a url tag is equal as clicking on a bookmark. 
+- url tag: tags start with 'http(s)://'. eg: https://google.com. Clicking on a url tag is equal as clicking on a bookmark.
 - context menu: fold with url tag.
 - settings: sailing: fold with url tag.
-- settings: lab: note: Do not load notes without meta data. This option gives you a choice to add a simple note to a bookmark but do not let it to be loaded as sticky note in its web page. 
+- settings: lab: note: Do not load notes without meta data. This option gives you a choice to add a simple note to a bookmark but do not let it to be loaded as sticky note in its web page.
 
 fix:
 
@@ -88,7 +107,7 @@ add:
 - folder sailing with folder support.
 - sailing: tab cache.
 - keyboard: go to first tab.
-- keyboard: sail.refresh. sail.fold. sail.upward (go to upper level). 
+- keyboard: sail.refresh. sail.fold. sail.upward (go to upper level).
 - temporary node order.
 - buffer nodes (preview).
 
@@ -108,7 +127,7 @@ add:
 - folder sailing.
 - lazy loader.
 
-This edition may be buggy, for we have rewritten the data engine for further develpments. The new features are added for preview. They are supposed to be improved gradually. 
+This edition may be buggy, for we have rewritten the data engine for further develpments. The new features are added for preview. They are supposed to be improved gradually.
 
 ### Reveal button.
 
@@ -132,10 +151,10 @@ When it is booted:
 - a sailing window is formed, with a pinned abookmark page as its sailing engine.
 - bookmarks under the sailing folder are loaded as tabs in the sailing window. (sub-folders are not loaded in this edition)
 - everything happens in the sailing window may change the sailing folder:
-	- add a tab = create a bookmark
-	- close a tab = remove the bookmark
-	- update a tab = update the bookmark
-	- ...
+  - add a tab = create a bookmark
+  - close a tab = remove the bookmark
+  - update a tab = update the bookmark
+  - ...
 - everything happens in the sailing folder by the sailing engine may affect the sailing window.
 - close the tab of sailing engine = stop sailing
 - It will fallback to a normal tab if there is some other tab before the sailing engine in the sailing window.
