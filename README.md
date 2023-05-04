@@ -2,17 +2,15 @@
 
 Abookmark uses the native bookmarks as its database and it has some advanced features as labels, sticky notes, and trash mode...
 
-Abookmark can store and restore tabs as onetab, and it saves tabs as bookmarks.
-
-With the help of "sailing", Abookmark can be used as the chromium based "tree style tab".
+Abookmark can store and restore tabs as onetab and toby, but it saves tabs as bookmarks.
 
 <https://chrome.google.com/webstore/detail/abookmark/poeodakgiedndmmkabehagjgpbjkcfgg>
 
 <https://microsoftedge.microsoft.com/addons/detail/abookmark/njffnfkceagiolcjfjdnofoobckaeanb>
 
-<https://addons.mozilla.org/firefox/addon/abookmark/>
+<!-- <https://addons.mozilla.org/firefox/addon/abookmark/> -->
 
-If abookmark doesn't work for you, there are some related extensions, such as onetab, taby, workona, braintool, tabs outliner, tree style tab (firefox), sidebery (firefox), bookmark sidebar, card bookmarks, finder bookmarks.
+If abookmark doesn't work for you, there are some related extensions, such as onetab, toby, workona, braintool, tabs outliner, tree style tab (firefox), sidebery (firefox), tab stash (firefox), bookmark sidebar, card bookmarks, finder bookmarks.
 
 ## Features
 
@@ -25,7 +23,7 @@ If abookmark doesn't work for you, there are some related extensions, such as on
 - Link replacing.
 - Sailing.
 - Tree view.
-- Grid view.
+- Link view.
 - Spread view & top bar / nav page.
 - Data text editor.
 - Export any bookmark folder.
@@ -40,10 +38,6 @@ If abookmark doesn't work for you, there are some related extensions, such as on
 ## Privacy
 
 All your bookmarks are stored in your browser system. Abookmark does not transfer any of your data to anywhere else.
-
-## Contact
-
-abookmark.dev@outlook.com
 
 ## Tips
 

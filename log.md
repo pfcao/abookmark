@@ -20,7 +20,23 @@ unsupported:
 - sailing: url-folder support.
 - context menu: url-folder. -->
 
-# 0.31.0
+# 0.31.1
+
+add:
+
+- link view. Link view renders bookmarks as raw links. It takes the place of grid view.
+- buffer nodes: now it is possible to set a buffer node as inbox folder. It is also possible to drop a buffer node into the background area to reveal it in the manager in nav page. The buffer nodes are for testing purposes only.
+
+remove:
+
+- grid view. After nav page and spread view matures, grid view is not used much. It is removed for simplicity. 
+
+fix:
+
+- context menu: add separator
+- search: recent
+
+# 0.31.0 [2023-5-1]
 
 add:
 

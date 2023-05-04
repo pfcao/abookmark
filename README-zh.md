@@ -16,11 +16,13 @@ Abookmark 是一款高级书签及标签页管理插件, 与 chrome/edge 原生�
 - 文本编辑器.
 - 书签栏与导航页. 书签栏相当于 chrome 的书签栏 + 多列单屏展示, 尤其适合书签较多的用户. 书签栏提供 Abookmark 的核心功能.
 
+<https://chrome.google.com/webstore/detail/abookmark/poeodakgiedndmmkabehagjgpbjkcfgg>
+
+<https://microsoftedge.microsoft.com/addons/detail/abookmark/njffnfkceagiolcjfjdnofoobckaeanb>
+
 ## Privacy
 
 所有数据均保存于本地. Abookmark 不会向别处传输任何用户数据.
-
-abookmark.dev@outlook.com
 
 ## Tips
 
@@ -243,5 +245,7 @@ Some other in page bookmark extention will load the bookmarks into every page be
 ## Buy me a coffee.
 
 paypal: <https://paypal.me/pfcao>
+
+## Email
 
 abookmark.dev@outlook.com
