@@ -12,13 +12,12 @@ unsupported:
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
 
-<!-- # 0.29.0
+# 0.31.2
 
-- url-folder: folder with url.
-- drop on a bookmark to change it into a url-folder.
-- settings: url-folder.
-- sailing: url-folder support.
-- context menu: url-folder. -->
+fix:
+
+- restore.
+- buffer nodes: dateAdded.
 
 # 0.31.1
 
