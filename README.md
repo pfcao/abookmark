@@ -8,9 +8,13 @@ Abookmark can store and restore tabs as onetab and toby, but it saves tabs as bo
 
 <https://microsoftedge.microsoft.com/addons/detail/abookmark/njffnfkceagiolcjfjdnofoobckaeanb>
 
-<!-- <https://addons.mozilla.org/firefox/addon/abookmark/> -->
+<https://addons.mozilla.org/firefox/addon/abookmark/>
 
-If abookmark doesn't work for you, there are some related extensions, such as onetab, toby, workona, braintool, tabs outliner, tree style tab (firefox), sidebery (firefox), tab stash (firefox), bookmark sidebar, card bookmarks, finder bookmarks.
+The firefox version is experimental.
+
+A bookmark is a sleeping tab and a tab is a living bookmark. The two can be converted into each other. Abookmark is good at managing a large number of tabs and bookmarks, and making them useable.
+
+If abookmark doesn't work for you, there are some related extensions to try out, such as onetab, toby, workona, braintool, tabs outliner, tree style tab (firefox), sidebery (firefox), tab stash (firefox), bookmark sidebar, card bookmarks, finder bookmarks. 
 
 ## Features
 
@@ -35,6 +39,7 @@ If abookmark doesn't work for you, there are some related extensions, such as on
 - Keyboard shortcuts.
 - Link hint.
 
+**abookmark tab inbox** is a subset of abookmark. It has the minimal features for tab management.
 ## Privacy
 
 All your bookmarks are stored in your browser system. Abookmark does not transfer any of your data to anywhere else.
@@ -73,7 +78,7 @@ All your bookmarks are stored in your browser system. Abookmark does not transfe
 
 ### node
 
-A node is a bookmark or a bookmark folder in Chromium.
+A node is a bookmark or a folder.
 
 ### home folder node
 
@@ -83,7 +88,7 @@ Abookmark uses the 'Other bookmarks/favorites' as home folder by default.
 
 ### inbox folder node
 
-Newly created bookmarks will be put into the subfolders of inbox folder. If there is no inbox folder appoited, home folder will be used as inbox.
+Newly created bookmarks will be put into inbox folder. If there is no inbox folder appoited, home folder will be used as inbox.
 
 ### top folder
 
@@ -91,6 +96,9 @@ Top folder is a folder for shortcuts. You can put anything you like into it.
 
 Abookmark uses the 'Bookmarks/Favorites bar' as top folder by default.
 
+### date stamp
+
+Abookmark prefers to store the date in the title explicitly. Generally it is a four-character string. eg: [231a]. The first two characters represent the year: 23 -> 2023. The third character represent the month: 1 -> January. The last character is the date: a -> 10, b -> 11, u->30.
 ### onetab
 
 A 'tab' in onetab is nothing but a bookmark node in Abookmark.

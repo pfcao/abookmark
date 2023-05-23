@@ -1,6 +1,6 @@
-Extentions are forbidden to run inside system pages, other extention pages or chrome/edge store for security reasons.
+# Abookmark change log
 
-Click folders with 'alt' to switch between spread view and normal view.
+Extentions are forbidden to run inside system pages, other extention pages or chrome/edge store for security reasons.
 
 As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Chrome > v105 is required then. (Since google postponed the process, we will revise the schedule.)
 
@@ -11,6 +11,21 @@ unsupported:
 
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
+
+# 0.32.0 [2023-5-15]
+
+abookmark tab inbox: a new extension which is a subset of abookmark. It has the minimal features for tab management.
+
+# 0.31.3
+
+add:
+
+- sort nodes by date added.
+- download a snapshot.
+
+fix:
+
+- file import: id collision.
 
 # 0.31.2
 

@@ -20,6 +20,15 @@ Abookmark 是一款高级书签及标签页管理插件, 与 chrome/edge 原生�
 
 <https://microsoftedge.microsoft.com/addons/detail/abookmark/njffnfkceagiolcjfjdnofoobckaeanb>
 
+<https://addons.mozilla.org/firefox/addon/abookmark/>
+
+书签是休眠了的标签页, 标签页是活的书签, 两者是同一事物的不同形态, 可以相互转换. Abookmark 擅长管理大量的书签与标签页, 保持它们的可用性.
+
+如果本插件不适合您, 不妨试用下列相关插件:
+onetab, toby, workona, braintool, tabs outliner, tree style tab (firefox), sidebery (firefox), tab stash (firefox), bookmark sidebar, card bookmarks, finder bookmarks. 
+
+**abookmark tab inbox** 是 abookmark 的子集, 包含最基本的标签页管理功能.
+
 ## Privacy
 
 所有数据均保存于本地. Abookmark 不会向别处传输任何用户数据.
