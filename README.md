@@ -8,13 +8,15 @@ Abookmark can store and restore tabs as onetab and toby, but it saves tabs as bo
 
 <https://microsoftedge.microsoft.com/addons/detail/abookmark/njffnfkceagiolcjfjdnofoobckaeanb>
 
-<https://addons.mozilla.org/firefox/addon/abookmark/>
+<!-- <https://addons.mozilla.org/firefox/addon/abookmark/>
 
-The firefox version is experimental.
+The firefox version is experimental. -->
 
 A bookmark is a sleeping tab and a tab is a living bookmark. The two can be converted into each other. Abookmark is good at managing a large number of tabs and bookmarks, and making them useable.
 
 If abookmark doesn't work for you, there are some related extensions to try out, such as onetab, toby, workona, braintool, tabs outliner, tree style tab (firefox), sidebery (firefox), tab stash (firefox), bookmark sidebar, card bookmarks, finder bookmarks. 
+
+**abookmark tab inbox** is a subset of abookmark. It has the minimal features for tab management.
 
 ## Features
 
@@ -39,7 +41,6 @@ If abookmark doesn't work for you, there are some related extensions to try out,
 - Keyboard shortcuts.
 - Link hint.
 
-**abookmark tab inbox** is a subset of abookmark. It has the minimal features for tab management.
 ## Privacy
 
 All your bookmarks are stored in your browser system. Abookmark does not transfer any of your data to anywhere else.

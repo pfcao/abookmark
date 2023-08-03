@@ -5,12 +5,28 @@ Extentions are forbidden to run inside system pages, other extention pages or ch
 As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Chrome > v105 is required then. (Since google postponed the process, we will revise the schedule.)
 
 <!--
-# 0.30.0
-
 unsupported:
-
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
+
+# 0.33.0 [2023-8-1]
+
+add:
+
+- settings: lab: turn on/off the sail mode.
+
+Since sailing may modify your bookmarks and it needs a bit to learn, we turn off it by default from this version. You can active it from settings - lab panel.
+
+- search router.
+
+The native bookmark manager has a router for search: 
+chrome://bookmarks/?q=...
+It may be used as a search engine link and called by other apps.
+Now we have a similar router for abookmark:
+<abookmark-app-url>/bookmarks.html?q=...
+If you are using chrome, it is:
+chrome-extension://poeodakgiedndmmkabehagjgpbjkcfgg/bookmarks.html?q=
+or someting like that.
 
 # 0.32.0 [2023-5-15]
 
