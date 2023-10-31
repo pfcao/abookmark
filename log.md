@@ -1,13 +1,50 @@
 # Abookmark change log
 
-Extentions are forbidden to run inside system pages, other extention pages or chrome/edge store for security reasons.
-
 As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Chrome > v105 is required then. (Since google postponed the process, we will revise the schedule.)
 
 <!--
 unsupported:
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
+# 0.34.0 [2023-10-20]
+
+add:
+
+- settings: lab: tab nodes.
+- settings: main: add date stamp when creating folders.
+- shortcuts: store current tab to temp folder.
+- shortcuts: store current tab to top folder.
+- shortcuts: copy current tab info to clipboard.
+- link view -> data view.
+- in app hotkey: Copy the info of selected nodes to clipboard: Ctrl + c
+
+<!-- - shortcuts: store current tab to secondary top folder*. -->
+<!-- The "secondary top folder" is the folder attached to the topbar. This feature was introduced in v0.25.0. Just drag a folder and drop it in the blank area in the nav page to attach it.  -->
+
+<!-- - settings: lab: free tags*.
+
+Free tags are #tags in the "_title" filed. We do not parse them by default. This feature is mainly for compatibility with other apps.
+
+A free tag needs to start with "#", with at least 4 characters. -->
+
+change:
+
+- auto deselect nodes if they become invisible after dropping.
+- top bar: show title automatically if multiple pages come from the same site.
+- top bar: show the title if starred.
+- trash folder -> option menu.
+
+fix:
+
+- better browser back/forward support after searching or tag clicking.
+- shortcuts: open main app in page.
+- context menu: normalize. Now it works in buffer nodes too.
+
+remove:
+
+- browser context menu.
+- json export.
+- not commonly used features.
 
 # 0.33.0 [2023-8-1]
 
@@ -23,7 +60,7 @@ The native bookmark manager has a router for search:
 chrome://bookmarks/?q=...
 It may be used as a search engine link and called by other apps.
 Now we have a similar router for abookmark:
-<abookmark-app-url>/bookmarks.html?q=...
+{abookmark-app-url}/bookmarks.html?q=...
 If you are using chrome, it is:
 chrome-extension://poeodakgiedndmmkabehagjgpbjkcfgg/bookmarks.html?q=
 or someting like that.
@@ -235,7 +272,7 @@ add:
 
 - rewritten drag & drop engine. Now you can drop a link into abookmark. It also supports to drag abookmark nodes across windows and drop it anywhere.
 - [nav] integrated manager in nav.
-- [nav] drop a bookmark node on the blank area in nav page to reveal it or to attach to topbar.
+- [nav] drop a bookmark node on the blank area in nav page to reveal it or to attach to topbar as "secondary topbar".
 - [nav] topbar pin mode.
 - [nav] nav trigger: +Ctrl to open in new tab.
 - [settings] url click options in tree view.

@@ -1,4 +1,6 @@
-# Abookmark advanced bookmark & tab manager
+# Abookmark advanced bookmark manager & tab organizer
+
+<www.abookmark.org>
 
 Abookmark uses the native bookmarks as its database and it has some advanced features as labels, sticky notes, and trash mode...
 
@@ -21,25 +23,21 @@ If abookmark doesn't work for you, there are some related extensions to try out,
 ## Features
 
 - Labels/Tags.
-- Tab managements.
 - Sticky notes in web pages.
 - Trash/Recycle.
-- Advanced search.
-- Link picking.
-- Link replacing.
-- Sailing.
-- Tree view.
-- Link view.
-- Spread view & top bar / nav page.
-- Data text editor.
-- Export any bookmark folder.
+- Tab managments. (store & restore tabs/sessions.)
+- Sailing. (update saved bookmarks automatically while surfing)
+- Advanced bookmark bar (spread view & top bar)
+- Data text editor. (edit bookmarks in your favorite text editor)
 - Import selected bookmarks from a file.
 - Monthly backup.
 - Recent bookmarks.
+- Link hint. (vi-like keyboard)
+- Shortcuts.
+- Link picking.
+- Link replacing.
+- Advanced search.
 - Cooperate with native bookmark system.
-- Auto sync.
-- Keyboard shortcuts.
-- Link hint.
 
 ## Privacy
 
@@ -56,7 +54,7 @@ All your bookmarks are stored in your browser system. Abookmark does not transfe
 - Move bookmarks with [merge].
 - Drop nodes into nav buttons ([home], [trash], [top]...).
 - If you want to show the title of a bookmark in top bar you can put a letter '!' in front of its title.
-- Drop a node on blank area to reveal it.
+- Drop a bookmark node on the blank area in nav page to reveal it or to attach to topbar if it is a folder.
 
 ## Shortcuts
 
@@ -316,11 +314,3 @@ Abookmark does not inject anything into any web page unless it has notes to show
 Since v0.8, there is an option (inactive by default) to load a top bar trigger into web pages. This trigger is no more than a button.
 
 Some other in page bookmark extention will load the bookmarks into every page beforehand, so they can boot up immediately when you click. This is OK if it works well for you. But this is not the philosophy of Abookmark. It runs very fast only because it is extremely optimized.
-
-## Buy me a coffee.
-
-paypal: <https://paypal.me/pfcao>
-
-## Email
-
-abookmark.dev@outlook.com
