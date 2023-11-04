@@ -6,6 +6,28 @@ As chrome is going to shut down the support of manifest v2, we have to migrate t
 unsupported:
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
+
+# v0.34.2  [2023-11-05]
+
+add:
+
+<!-- - settings: date stamp format -->
+
+improve:
+
+- vi: larger font size for link hints.
+- side folder bar: synchronized scrolling.
+
+fix:
+
+- tag text edit.
+- store all tabs.
+
+remove:
+
+- nav page: bottom search box.
+
+
 # 0.34.0 [2023-10-20]
 
 add:
@@ -218,7 +240,7 @@ Though it has been there for a long time, we have never given the reveal button 
 
 1. If there is one bookmark selected, it will search for related nodes of that bookmark.
 2. If it is loaded in another web page or in popup mode: it will reveal the corresponding bookmark of the tab url (if the page is saved before) or search for related nodes of that url.
-3. If it is in sail mode, it will reveal the sailing folder.
+3. ~~If it is in sail mode, it will reveal the sailing folder.~~
 4. If it is in the app page and there is nothing else to reveal, it will reveal the current folder. In this case, it is equal to go to the upper level.
 
 ### What is tab nodes?

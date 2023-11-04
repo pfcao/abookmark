@@ -1,6 +1,6 @@
 # Abookmark advanced bookmark manager & tab organizer
 
-<www.abookmark.org>
+<https://www.abookmark.org>
 
 Abookmark uses the native bookmarks as its database and it has some advanced features as labels, sticky notes, and trash mode...
 
@@ -249,7 +249,7 @@ Left click on the 'arrows' in a folder (or drag a node upon the right arrow) to 
 
 Since v0.21, a icon is a checkbox at the same time. You can use Shift to select successive nodes.
 
-Alt + Click the icons in spread menu to reveal the corresponding node.
+<!-- Alt + Click the icons in spread menu to reveal the corresponding node. -->
 
 ### search
 
