@@ -1,17 +1,61 @@
 # Abookmark change log
 
-As chrome is going to shut down the support of manifest v2, we have to migrate to manifest v3. Chrome > v105 is required then. (Since google postponed the process, we will revise the schedule.)
-
 <!--
 unsupported:
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
 
-# v0.34.2  [2023-11-05]
+# v0.36.0  [2024-01-30]
+
+Chrome 109+ is required from this version. And chrome 116+ is required for side panel.
 
 add:
 
+- tab node: tab groups.
+- side panel & vertical tabs. (chrome 116+)
+- settings: click: extension icon: click to open side panel
+- system keyboard shortcuts: open side panel 
+- mouse middle button click to remove the node.
+<!-- - sail: tab group as cache.
+- sail: bypass pinned tabs.
+- sail: bypass grouped tabs. -->
+
+remove:
+
+<!-- - mini.html -->
+- sail: fold with url tag.
+- sail: Mark incoming nodes with "~"
+
+improve:
+
+- cross window cut / copy support
+- cross window drag & drop support.
+- drag support for the avatar of the selected nodes.
+
+# v0.35.0  [2023-11-20]
+
+add:
+
+- Archive folder node. 
+- Shortcut: Store current tab to archive folder.
+- vi: "A" -> archive. ":+" -> add
+- Node shortcut list.
+- data view: variables: date, origin, host.
+- data view: pipes: maxLength, until, untilReg.
+- json data editor -> data view.
+
 <!-- - settings: date stamp format -->
+
+fix:
+
+- Sailing: in new window.
+- Create.
+
+remove:
+
+- Trash recycle. 
+
+# v0.34.2  [2023-11-05]
 
 improve:
 
