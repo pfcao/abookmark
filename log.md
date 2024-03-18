@@ -5,6 +5,39 @@ unsupported:
 - bookmarket -->
 <!-- - [nav] context menu: 'Create shortcut in top folder'. -->
 
+# v0.37.0  [2024-03-20]
+
+add:
+
+- settings: side panel start page.
+- settings: side panel reverse order.
+- sailing: go to sailing folder.
+
+improve:
+
+- edge: side panel
+- import from json files.
+
+# v0.36.5  [2024-03-05]
+
+add:
+
+- search in folder button
+- side panel: search in folder in a tab
+<!-- - settings: lab: tab nodes -->
+
+improve:
+
+- permissions
+
+# v0.36.3  [2024-02-10]
+
+fix:
+
+- tab group dnd/remove
+- tab nodes dnd across window
+- sd active nodes
+
 # v0.36.0  [2024-01-30]
 
 Chrome 109+ is required from this version. And chrome 116+ is required for side panel.
@@ -22,7 +55,6 @@ add:
 
 remove:
 
-<!-- - mini.html -->
 - sail: fold with url tag.
 - sail: Mark incoming nodes with "~"
 
